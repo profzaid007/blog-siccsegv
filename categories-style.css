@@ -1,0 +1,267 @@
+/* ============================================================
+   Categories Page Styles
+   ============================================================ */
+
+.categories-hero {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(135deg, rgba(20, 195, 142, 0.05) 0%, transparent 100%);
+  border-bottom: 1px solid var(--border);
+}
+
+.categories-section {
+  padding: 4rem 0;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* ============================================================
+   Category Cards
+   ============================================================ */
+
+.category-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.category-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.category-card.featured {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, rgba(20, 195, 142, 0.05) 0%, transparent 100%);
+  border-color: var(--accent);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.category-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  flex-shrink: 0;
+  border: 2px solid;
+  transition: all 0.3s;
+}
+
+.category-card:hover .category-icon {
+  transform: scale(1.1);
+}
+
+/* Category Icon Colors */
+.category-icon.pentesting {
+  background: rgba(247, 159, 153, 0.1);
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.category-icon.linux {
+  background: rgba(212, 255, 0, 0.1);
+  border-color: var(--accent2);
+  color: var(--accent2);
+}
+
+.category-icon.cloud {
+  background: rgba(137, 180, 250, 0.1);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.category-icon.python {
+  background: rgba(20, 195, 142, 0.1);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.category-icon.ctf {
+  background: rgba(166, 227, 161, 0.1);
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.category-icon.webdev {
+  background: rgba(247, 159, 153, 0.1);
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.category-icon.bash {
+  background: rgba(20, 195, 142, 0.1);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.category-icon.network {
+  background: rgba(137, 180, 250, 0.1);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.category-icon.malware {
+  background: rgba(247, 159, 153, 0.1);
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.category-meta {
+  flex: 1;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.category-title a {
+  color: var(--fg);
+  transition: color 0.3s;
+}
+
+.category-title a:hover {
+  color: var(--accent);
+}
+
+.category-count {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.category-description {
+  color: var(--muted);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.category-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.mini-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.3rem 0.6rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--muted);
+  transition: all 0.3s;
+}
+
+.mini-tag:hover {
+  background: rgba(20, 195, 142, 0.1);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.category-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.latest-post {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.latest-post i {
+  color: var(--accent);
+}
+
+.category-link {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.category-link:hover {
+  gap: 0.75rem;
+  color: var(--accent2);
+}
+
+/* ============================================================
+   Categories Stats Terminal
+   ============================================================ */
+
+.categories-stats {
+  margin-top: 4rem;
+}
+
+.stats-output {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--fg);
+  margin: 0;
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card.featured {
+    grid-column: 1;
+  }
+
+  .category-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .category-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.75rem;
+  }
+
+  .category-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stats-output {
+    font-size: 0.7rem;
+  }
+}

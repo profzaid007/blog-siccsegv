@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Siccsegv</title>
+  <meta name="description" content="Technical insights, security research, and industry perspectives from Siccsegv">
+  <meta name="keywords" content="cybersecurity,penetration testing,linux,security blog,hacking">
+  <link rel="canonical" href="https://blog.siccsegv.com">
+  <link rel="shortcut icon" href="https://siccsegv.com/static/img/icon1.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-section">
+        <a href="/" class="logo">
+          <i class="fa-solid fa-terminal"></i>
+          <span>Siccsegv Blog</span>
+        </a>
+        <span class="blog-tagline">// Technical Insights & Security Research</span>
+      </div>
+      <nav class="nav">
+        <a href="/">All Posts</a>
+        <a href="/categories">Categories</a>
+        <a href="/archive">Archive</a>
+        <a href="https://siccsegv.com" class="nav-cta">← Main Site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="terminal-prompt">
+            <span class="prompt-symbol">$</span>
+            <span class="prompt-text">cd /blog && cat latest.md</span>
+          </div>
+          <h1 class="hero-title">Deep Dives Into Security<span class="cursor">_</span></h1>
+          <p class="hero-subtitle">
+            Penetration testing methodologies, exploit development, infrastructure hardening,
+            and everything in between. Written by practitioners, for practitioners.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-section">
+      <div class="container">
+        <div class="section-badge">
+          <span class="badge-icon">●</span> LATEST POST
+        </div>
+        
+        <article class="featured-post">
+          <div class="post-meta">
+            <span class="post-date">
+              <i class="fa-solid fa-calendar"></i> March 10, 2025
+            </span>
+            <span class="post-reading-time">
+              <i class="fa-solid fa-clock"></i> 12 min read
+            </span>
+          </div>
+          
+          <h2 class="post-title">
+            <a href="/posts/advanced-penetration-testing-techniques.html">
+              Advanced Penetration Testing Techniques for Modern Web Applications
+            </a>
+          </h2>
+          
+          <p class="post-excerpt">
+            Exploring advanced methodologies for identifying business logic flaws and zero-day vulnerabilities 
+            in contemporary web infrastructure. We go beyond automated scanning to demonstrate manual testing 
+            techniques that uncover critical security issues in real-world applications. From authentication 
+            bypass to complex race conditions, this guide covers the methodologies that separate basic testing 
+            from comprehensive security assessments.
+          </p>
+          
+          <div class="post-footer">
+            <div class="post-tags">
+              <span class="tag">Penetration Testing</span>
+              <span class="tag">Web Security</span>
+              <span class="tag">OWASP</span>
+              <span class="tag">Vulnerability Research</span>
+            </div>
+            <a href="/posts/advanced-penetration-testing-techniques.html" class="read-more">
+              Read Article <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- All Posts -->
+    <section class="posts-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Recent Articles<span class="cursor">_</span></h2>
+          <div class="filter-tabs">
+            <button class="filter-tab active">All</button>
+            <button class="filter-tab">Pentesting</button>
+            <button class="filter-tab">Linux</button>
+            <button class="filter-tab">Development</button>
+          </div>
+        </div>
+
+        <div class="posts-grid">
+          <!-- Post 1 -->
+          <article class="post-card">
+            <div class="post-status">
+              <span class="status-badge new">● NEW</span>
+              <span class="post-date-small">Mar 8, 2025</span>
+            </div>
+            
+            <h3 class="post-card-title">
+              <a href="/posts/linux-kernel-hardening.html">
+                Linux Kernel Hardening: A Practical Guide
+              </a>
+            </h3>
+            
+            <p class="post-card-excerpt">
+              Step-by-step configuration for production-grade kernel security. From SELinux policies 
+              to syscall filtering with seccomp-bpf. Learn how to lock down your Linux systems...
+            </p>
+            
+            <div class="post-card-footer">
+              <div class="post-tags-small">
+                <span class="tag-small">Linux</span>
+                <span class="tag-small">Security</span>
+                <span class="tag-small">Hardening</span>
+              </div>
+              <span class="read-time">
+                <i class="fa-solid fa-clock"></i> 8 min
+              </span>
+            </div>
+          </article>
+
+          <!-- Post 2 -->
+          <article class="post-card">
+            <div class="post-status">
+              <span class="status-badge new">● NEW</span>
+              <span class="post-date-small">Mar 5, 2025</span>
+            </div>
+            
+            <h3 class="post-card-title">
+              <a href="/posts/automating-security-workflows.html">
+                Automating Security Workflows with Python
+              </a>
+            </h3>
+            
+            <p class="post-card-excerpt">
+              Building custom automation tools for vulnerability scanning, log analysis, and incident response. 
+              Real-world Python scripts that save hours of manual work...
+            </p>
+            
+            <div class="post-card-footer">
+              <div class="post-tags-small">
+                <span class="tag-small">Python</span>
+                <span class="tag-small">Automation</span>
+                <span class="tag-small">DevSecOps</span>
+              </div>
+              <span class="read-time">
+                <i class="fa-solid fa-clock"></i> 10 min
+              </span>
+            </div>
+          </article>
+
+          <!-- Post 3 -->
+          <article class="post-card">
+            <div class="post-status">
+              <span class="status-badge archive">● ARCHIVE</span>
+              <span class="post-date-small">Feb 28, 2025</span>
+            </div>
+            
+            <h3 class="post-card-title">
+              <a href="/posts/cloud-security-misconfigurations.html">
+                Top 10 Cloud Security Misconfigurations We Find
+              </a>
+            </h3>
+            
+            <p class="post-card-excerpt">
+              From our penetration testing engagements: the most common AWS, Azure, and GCP 
+              misconfigurations that lead to critical vulnerabilities and data breaches...
+            </p>
+            
+            <div class="post-card-footer">
+              <div class="post-tags-small">
+                <span class="tag-small">Cloud</span>
+                <span class="tag-small">AWS</span>
+                <span class="tag-small">Pentesting</span>
+              </div>
+              <span class="read-time">
+                <i class="fa-solid fa-clock"></i> 15 min
+              </span>
+            </div>
+          </article>
+
+          <!-- Post 4 -->
+          <article class="post-card">
+            <div class="post-status">
+              <span class="status-badge archive">● ARCHIVE</span>
+              <span class="post-date-small">Feb 20, 2025</span>
+            </div>
+            
+            <h3 class="post-card-title">
+              <a href="/posts/ctf-writeup-sql-injection.html">
+                CTF Writeup: Exploiting SQL Injection in Modern Frameworks
+              </a>
+            </h3>
+            
+            <p class="post-card-excerpt">
+              A detailed walkthrough of exploiting blind SQL injection in applications using ORM frameworks. 
+              Techniques, tools, and lessons learned from competitive hacking...
+            </p>
+            
+            <div class="post-card-footer">
+              <div class="post-tags-small">
+                <span class="tag-small">CTF</span>
+                <span class="tag-small">SQLi</span>
+                <span class="tag-small">Exploits</span>
+              </div>
+              <span class="read-time">
+                <i class="fa-solid fa-clock"></i> 20 min
+              </span>
+            </div>
+          </article>
+
+          <!-- Post 5 -->
+          <article class="post-card">
+            <div class="post-status">
+              <span class="status-badge archive">● ARCHIVE</span>
+              <span class="post-date-small">Feb 15, 2025</span>
+            </div>
+            
+            <h3 class="post-card-title">
+              <a href="/posts/bash-scripting-best-practices.html">
+                Bash Scripting Best Practices for System Administrators
+              </a>
+            </h3>
+            
+            <p class="post-card-excerpt">
+              Writing maintainable, secure bash scripts. Error handling, input validation, 
+              and common pitfalls to avoid in production environments...
+            </p>
+            
+            <div class="post-card-footer">
+              <div class="post-tags-small">
+                <span class="tag-small">Bash</span>
+                <span class="tag-small">DevOps</span>
+                <span class="tag-small">Scripting</span>
+              </div>
+              <span class="read-time">
+                <i class="fa-solid fa-clock"></i> 6 min
+              </span>
+            </div>
+          </article>
+
+          <!-- Post 6 -->
+          <article class="post-card">
+            <div class="post-status">
+              <span class="status-badge archive">● ARCHIVE</span>
+              <span class="post-date-small">Feb 10, 2025</span>
+            </div>
+            
+            <h3 class="post-card-title">
+              <a href="/posts/zero-trust-architecture.html">
+                Implementing Zero Trust Architecture in Enterprise Networks
+              </a>
+            </h3>
+            
+            <p class="post-card-excerpt">
+              Moving beyond perimeter-based security. A practical guide to implementing zero trust 
+              principles, micro-segmentation, and continuous verification...
+            </p>
+            
+            <div class="post-card-footer">
+              <div class="post-tags-small">
+                <span class="tag-small">Zero Trust</span>
+                <span class="tag-small">Network Security</span>
+                <span class="tag-small">Enterprise</span>
+              </div>
+              <span class="read-time">
+                <i class="fa-solid fa-clock"></i> 18 min
+              </span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Load More -->
+        <div class="load-more-section">
+          <button class="btn-load-more">
+            Load More Posts <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASCII Art Philosophy Section -->
+    <section class="ascii-section">
+      <div class="container">
+        <div class="ascii-container">
+          <pre class="ascii-art">
+   _____ _____ _____ _____ _____ _____ _____ _____ 
+  |   __|     |     |  |  |   __|   __|   __|  |  |
+  |__   |-   -|   --|    -|   __|  |  |  |  |  |  |
+  |_____|_____|_____|__|__|_____|_____|_____|_____|
+                                                    
+  ┌─────────────────────────────────────────────┐
+  │  "Knowledge is the only instrument of        │
+  │   production that is not subject to          │
+  │   diminishing returns."                      │
+  │                                               │
+  │  The more we learn, the more we discover     │
+  │  what we don't know. Security is not a       │
+  │  destination—it's a continuous journey       │
+  │  through the labyrinth of complexity.        │
+  └─────────────────────────────────────────────┘
+          </pre>
+
+          <div class="philosophy-grid">
+            <div class="philosophy-card">
+              <pre class="philosophy-ascii">
+  ╔════════════╗
+  ║    SEEK    ║
+  ╚════════════╝
+              </pre>
+              <h4>Seek Understanding</h4>
+              <p>
+                True mastery comes not from memorizing exploits, but from understanding 
+                the fundamental principles that govern systems. Question everything.
+              </p>
+            </div>
+
+            <div class="philosophy-card">
+              <pre class="philosophy-ascii">
+  ╔════════════╗
+  ║    TEST    ║
+  ╚════════════╝
+              </pre>
+              <h4>Test Assumptions</h4>
+              <p>
+                Every system has assumptions. Every assumption can be challenged. 
+                The boundary between security and vulnerability is often just untested logic.
+              </p>
+            </div>
+
+            <div class="philosophy-card">
+              <pre class="philosophy-ascii">
+  ╔════════════╗
+  ║   SHARE    ║
+  ╚════════════╝
+              </pre>
+              <h4>Share Knowledge</h4>
+              <p>
+                Security thrives in transparency. Share discoveries, teach others, 
+                build on collective wisdom. We rise by lifting others.
+              </p>
+            </div>
+          </div>
+
+          <div class="ascii-quote">
+            <pre class="quote-art">
+    ┌────────────────────────────────────────────────────────┐
+    │                                                        │
+    │  "The hacker mindset doesn't actually see what         │
+    │   happens on the other side, in the problems of        │
+    │   the larger world. They see the world through         │
+    │   their computers."                                    │
+    │                                                        │
+    │  We write here not to glorify exploitation, but        │
+    │  to illuminate the paths of understanding. Every       │
+    │  vulnerability discovered is a lesson learned,         │
+    │  every exploit crafted is knowledge earned.            │
+    │                                                        │
+    │  Security is not about building walls—it's about       │
+    │  understanding the nature of boundaries.               │
+    │                                                        │
+    └────────────────────────────────────────────────────────┘
+            </pre>
+          </div>
+
+          <div class="ascii-footer">
+            <pre class="footer-art">
+    ════════════════════════════════════════════════════
+    
+         [*] Learn  →  Understand  →  Share  →  Protect
+    
+         "In the realm of cybersecurity, knowledge is 
+          both shield and sword, defense and offense,
+          question and answer."
+    
+    ════════════════════════════════════════════════════
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terminal CTA -->
+    <section class="terminal-section">
+      <div class="container">
+        <div class="terminal-box">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="btn-close"></span>
+              <span class="btn-minimize"></span>
+              <span class="btn-maximize"></span>
+            </div>
+            <span class="terminal-title">~/blog $</span>
+          </div>
+          <div class="terminal-body">
+            <p class="terminal-line">
+              <span class="prompt">$</span> 
+              <span class="command">subscribe --newsletter</span>
+            </p>
+            <p class="terminal-output">
+              Get weekly security insights, exploit breakdowns, and technical deep-dives<br>
+              delivered straight to your inbox. No spam, no tracking, just pure knowledge.
+            </p>
+            <p class="terminal-line">
+              <span class="prompt">$</span> 
+              <span class="command">echo "<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f59098949c99b5908d9498859990db969a98">[email&#160;protected]</a>" >> subscribers.txt</span>
+            </p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="your@email.com" class="terminal-input">
+              <button class="terminal-submit">Subscribe →</button>
+            </div>
+            <p class="terminal-line">
+              <span class="prompt">$</span> 
+              <a href="/rss.xml" class="terminal-link">cat rss.xml</a> 
+              <span class="terminal-text">// RSS feed available</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>Siccsegv Blog</h4>
+          <p>Technical insights from security practitioners. Real-world experiences, no fluff.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">All Posts</a></li>
+            <li><a href="/categories">Categories</a></li>
+            <li><a href="/archive">Archive</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Main Site</h4>
+          <ul>
+            <li><a href="https://siccsegv.com">Home</a></li>
+            <li><a href="https://siccsegv.com#pentests">Services</a></li>
+            <li><a href="https://siccsegv.com#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/siccsegv/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.youtube.com/@siccsegv" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/Siccsegv/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="/rss.xml">
+              <i class="fa-solid fa-rss"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-
