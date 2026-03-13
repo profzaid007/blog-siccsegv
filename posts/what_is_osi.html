@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is the OSI Model? - Siccsegv Blog</title>
+  <meta name="description" content="The 7 layered framework for networking ">
+  <meta name="keywords" content="cybersecurity, penetration testing, security research">
+  <link rel="canonical" href="https://blog.siccsegv.com/posts/what_is_osi.html">
+  <link rel="shortcut icon" href="https://siccsegv.com/static/img/icon1.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../post-style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-section">
+        <a href="/" class="logo">
+          <i class="fa-solid fa-terminal"></i>
+          <span>Siccsegv Blog</span>
+        </a>
+        <span class="blog-tagline">// Technical Insights & Security Research</span>
+      </div>
+      <nav class="nav">
+        <a href="/">All Posts</a>
+        <a href="/categories">Categories</a>
+        <a href="/archive">Archive</a>
+        <a href="https://siccsegv.com" class="nav-cta">← Main Site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Article -->
+    <article class="blog-post">
+      <div class="post-container">
+        <!-- Post Header -->
+        <header class="post-header">
+          <div class="post-breadcrumb">
+            <a href="/">Blog</a>
+            <span>/</span>
+            <span>Programming</span>
+          </div>
+
+          <h1 class="post-heading">
+            What is the OSI Model?
+          </h1>
+
+          <div class="post-details">
+            <div class="post-author">
+              <div class="author-avatar">
+                <i class="fa-solid fa-user-secret"></i>
+              </div>
+              <div class="author-info">
+                <span class="author-name">Siccsegv Team</span>
+                <span class="author-role">Security Researchers</span>
+              </div>
+            </div>
+
+            <div class="post-info">
+              <span class="info-item">
+                <i class="fa-solid fa-calendar"></i>
+                March 13, 2026
+              </span>
+              <span class="info-item">
+                <i class="fa-solid fa-clock"></i>
+                5 min read
+              </span>
+              <span class="info-item">
+                <i class="fa-solid fa-tag"></i>
+                Programming
+              </span>
+            </div>
+          </div>
+
+          <div class="post-tags-header">
+            <span class="tag">Programming</span>
+          </div>
+        </header>
+
+        <!-- Post Content -->
+        <div class="post-body">
+          <p>
+The OSI model can be defined as a theoretical blueprint that defines how computers communicate with their respective protocols on a network. Thoughthis model is used comparatively less in the practical world, it has its own benefits. This seven-layered model is often used to troubleshoot. The OSI model, with each layer dissecting the network communications systems, helps individuals and major companies trace the source of the problem and troubleshoot it.</p><p>The OSI model has the respective seven abstract layers:</p><p>(insert image of OSI model)</p><p>Typically, every time a data packet is sent from a terminal, it climbs up all the seven OSI stack layers and climbs them down again on the end users&#039; side. And depending on what type of packet is being sent, their respective protocol is used.</p><p>7. Application layer
+This layer involves the application a user interacts with. The application layer does not include the application itself but rather only the protocols the application uses. Give some examples http ftp.</p><p>6. presentation layer
+This layer prepares the data for the application to use. The preparation includes encryption, decryption, character encodings, and compression. The presentation layer handles everything from decrypting the received data to encrypting it for the application to understand and send. This layer is mainly responsible for improving efficiency and usability for the user.</p><p>5. Session layer
+From initializing a connection to terminating it, this layer manages it all. This is also the layer that reconnects when the current session is interrupted.</p><p>4. Transport layer
+The host-to-host transport layer, also called the transport layer, consists of UDP and TCP. This layer is responsible for transferring data across a network.</p><p>3. Network layer
+The network layer is the routing layer where the router, gateway, and all reside. This is the layer where the IP address and subnet mask are. again talk about how the ip is assigned </p><p>2. Data-link layer
+Mention how the mac address is assigned through NICs. This layer holds the protocols to communicate between physical devices and establishes and terminates communication in its interval. One such example would be the PPP. Switches lie here, along with MAC address and ARP(address resolution protocol).</p><p>1. Physical layer
+Physical equipment like wires come under this layer. Data is converted to raw bit streams; these are received and transmitted in this layer.</p>
+        </div>
+
+        <!-- Post Footer -->
+        <footer class="post-footer">
+          <div class="share-section">
+            <h4>Share this article</h4>
+            <div class="share-buttons">
+              <a href="https://twitter.com/intent/text?text=What is the OSI Model?&url=https://blog.siccsegv.com/posts/what_is_osi.html" class="share-btn twitter" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-twitter"></i> Twitter
+              </a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://blog.siccsegv.com/posts/what_is_osi.html" class="share-btn linkedin" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.siccsegv.com/posts/what_is_osi.html" class="share-btn facebook" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook"></i> Facebook
+              </a>
+              <a href="#" class="share-btn copy" onclick="navigator.clipboard.writeText('https://blog.siccsegv.com/posts/what_is_osi.html'); alert('Link copied!'); return false;">
+                <i class="fa-solid fa-link"></i> Copy Link
+              </a>
+            </div>
+          </div>
+
+          <div class="author-box">
+            <div class="author-avatar-large">
+              <i class="fa-solid fa-user-secret"></i>
+            </div>
+            <div class="author-details">
+              <h4>Written by Siccsegv Team</h4>
+              <p>Our team of security researchers and penetration testers share insights from real-world engagements and cutting-edge research.</p>
+              <a href="https://siccsegv.com#contact" class="author-cta">
+                Work with us →
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </article>
+
+    <!-- Related Posts -->
+    <section class="related-posts">
+      <div class="container-narrow">
+        <h3 class="related-title">Related Articles<span class="cursor">_</span></h3>
+        <div class="related-grid">
+          <!-- Related posts will be populated manually or by a separate script -->
+          <a href="/posts/linux-kernel-hardening.html" class="related-card">
+            <span class="related-tag">Linux</span>
+            <h4>Linux Kernel Hardening: A Practical Guide</h4>
+            <span class="related-date">Mar 8, 2025</span>
+          </a>
+
+          <a href="/posts/cloud-security-misconfigurations.html" class="related-card">
+            <span class="related-tag">Cloud</span>
+            <h4>Top 10 Cloud Security Misconfigurations</h4>
+            <span class="related-date">Feb 28, 2025</span>
+          </a>
+
+          <a href="/posts/automating-security-workflows.html" class="related-card">
+            <span class="related-tag">Python</span>
+            <h4>Automating Security Workflows with Python</h4>
+            <span class="related-date">Mar 5, 2025</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>Siccsegv Blog</h4>
+          <p>Technical insights from security practitioners.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">All Posts</a></li>
+            <li><a href="/categories">Categories</a></li>
+            <li><a href="/archive">Archive</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Main Site</h4>
+          <ul>
+            <li><a href="https://siccsegv.com">Home</a></li>
+            <li><a href="https://siccsegv.com#pentests">Services</a></li>
+            <li><a href="https://siccsegv.com#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Siccsegv. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+# Is a career in cybersecurity open to everyone?
+## Description: A brief outlook into nuances of cybersecurity 
+## Category: Cybersecurity
+
+Making cybersecurity a job has been more popular in recent years. As a cybersecurity practitioner, I am interested in sharing my practical knowledge of the industry and the challenges one must be prepared for when choosing cybersecurity.
+
+Why you want to work in cybersecurity is the most crucial factor to consider while choosing a career route. I want to explain why. When I was younger, I was naturally curious and eager to utilise computers and discover new things. When I first  gained access to a desktop, there was little internet availability. I would frequently engage in CD-ROM gaming or  investigate the vast aspects of the operating system. I soon found various openings to take advantage of.
+
+After some  time had passed, I had a reliable internet connection. In my life, this was a crucial turning point. I was only a few clicks away from having access to a wealth of knowledge. My first ever "hack" occurred when I had to change my admin  password after forgetting it. Due to a minor operating system glitch, I was unable to discover a legitimate method, soI found some tutorials and followed a method to reset the admin password. This was a significant development. Over theyears, I have learned a great deal about cybersecurity and the incredibly complex information it requires, thanks to  that experience.
+
+I pursue cybersecurity because I enjoy continuing my education and engaging in friendly competition with my peers, 
+especially when I am passionate about it. It is always rewarding to assist a person in need and feel that satisfactioneffectively. Many people are still unaware of the dangers that the cutting-edge technology they utilise daily poses. With the correct motivation, a user with malevolent intent may quickly discover an exploit. It is necessary to promoteawareness and impose essential guidelines for user protection.
+
+Now that we've discussed cybersecurity briefly, most people believe it to be a method of learning how to hack, which they may then utilise for themselves for any reason they choose. This is a terrible and depressing notion. Many people have contacted me asking that I teach hacking. When I question them, "Why do you want to learn?" they give me general comments while acknowledging that they would use it for malicious intent. Most of them asked, "Can you show me how to hack a Facebook account?" This style of thinking is the worst approach to entering the cybersecurity field. Hacking isa creative problem-solving technique, and those who engage in it are known as hackers. It is not done to breach the  law or do harm to others, which is what crackers do.
+
+To sum up, entering this profession is simple, but maintaining the required pace is exceptionally challenging and can only be achieved with enormous enthusiasm and enjoyment for what you do. Let's say you are interested in cybersecurityfor reasons other than those I've suggested. It will be depleting and harmful to you and the people around you becausethat is how cybersecurity works. With that, it is up to you to decide if it is a route that everyone can take.
