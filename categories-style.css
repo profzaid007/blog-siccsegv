@@ -230,6 +230,8 @@
   line-height: 1.6;
   color: var(--fg);
   margin: 0;
+  white-space: pre;
+  text-align: left;
 }
 
 /* ============================================================
