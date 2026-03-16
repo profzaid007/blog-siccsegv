@@ -565,18 +565,22 @@ section {
 
 .ascii-art {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
-  line-height: 1.2;
+  font-size: 1rem;
+  line-height: 1.4;
   color: var(--accent);
   background: var(--card-bg);
   border: 1px solid var(--accent);
   border-radius: 8px;
   padding: 2rem;
   overflow-x: auto;
-  text-align: center;
-  margin-bottom: 3rem;
+  white-space: pre;
+  margin: 0 auto 3rem;
+  max-width: fit-content;
   position: relative;
   transition: all 0.3s ease;
+  text-align: left;
+  letter-spacing: 0;
+  tab-size: 4;
 }
 
 /* Hover Effects for Main ASCII Art */
@@ -588,57 +592,32 @@ section {
   transform: scale(1.02);
 }
 
-/* CRT Scanline Effect on Hover */
-.ascii-art::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    rgba(20, 195, 142, 0.5),
-    transparent
-  );
-  opacity: 0;
-  animation: scanline 4s linear infinite;
-  pointer-events: none;
+/* Terminal Flicker Effect (Subtle) */
+.ascii-art {
+  animation: terminal-flicker 8s ease-in-out infinite;
 }
 
-.ascii-art:hover::before {
-  opacity: 1;
-}
-
-@keyframes scanline {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(400px); }
-}
-
-/* Flickering Text Effect on Hover */
-.ascii-art:hover {
-  animation: textFlicker 0.15s infinite;
-}
-
-@keyframes textFlicker {
+@keyframes terminal-flicker {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.95; }
+  94% { opacity: 1; }
+  95% { opacity: 0.92; }
+  95.5% { opacity: 1; }
+  96% { opacity: 0.95; }
+  96.5% { opacity: 1; }
 }
 
-/* Phosphor Glow on Hover */
-.ascii-art:hover {
-  text-shadow: 
-    0 0 5px rgba(20, 195, 142, 0.8),
-    0 0 10px rgba(20, 195, 142, 0.5),
-    0 0 15px rgba(20, 195, 142, 0.3);
+/* Typing Cursor at End of ASCII - DISABLED to fix alignment
+.ascii-art::after {
+  content: '_';
+  color: var(--accent);
+  animation: cursor-blink 1s step-end infinite;
+  margin-left: 0.5rem;
 }
+*/
 
-.philosophy-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
+@keyframes cursor-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
 }
 
 .philosophy-card {
@@ -1116,11 +1095,140 @@ section {
   }
 }
 
-/* Blinking cursor for terminal output */
-.cursor {
-  animation: blink 1s infinite;
+/* ============================================================
+   Footer ASCII Logo
+   ============================================================ */
+
+.footer-ascii {
+  font-family: 'Courier New', Courier, 'Lucida Console', Monaco, monospace;
+  font-size: 0.55rem;
+  line-height: 1.2;
+  color: var(--accent);
+  white-space: pre;
+  margin: 0 auto 2rem;
+  max-width: fit-content;
+  display: block;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  text-align: left;
+  letter-spacing: 0;
 }
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+.footer-ascii:hover {
+  opacity: 1;
+  color: var(--accent2);
+}
+
+@media (max-width: 768px) {
+  .footer-ascii {
+    font-size: 0.4rem;
+  }
+}
+
+/* ============================================================
+   Category ASCII Badges
+   ============================================================ */
+
+.category-badge {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.category-ascii {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  line-height: 1.1;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  background: var(--card-bg);
+  text-align: center;
+  margin: 0;
+}
+
+/* Category-specific colors */
+.category-badge.cybersecurity .category-ascii {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.category-badge.linux .category-ascii {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.category-badge.unix-philosophy .category-ascii {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.category-badge.programming .category-ascii {
+  color: var(--accent2);
+  border-color: var(--accent2);
+}
+
+.category-badge.smol-web .category-ascii {
+  color: var(--orange);
+  border-color: var(--orange);
+}
+
+.category-badge:hover .category-ascii {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px currentColor;
+  transition: all 0.2s ease;
+}
+
+/* ============================================================
+   Archive Timeline
+   ============================================================ */
+
+.archive-timeline-section {
+  padding: var(--section-padding) 0;
+}
+
+.archive-timeline {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--fg);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2rem;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.timeline-year {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.timeline-month {
+  color: var(--accent2);
+  font-weight: 600;
+}
+
+.timeline-count {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.archive-timeline a {
+  color: var(--fg);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.archive-timeline a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .archive-timeline {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
 }
