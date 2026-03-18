@@ -18,9 +18,11 @@
 <!-- Archive Timeline -->
 <section class="archive-timeline-section">
   <div class="container">
-    <pre class="archive-timeline">
+<pre class="archive-timeline">
 {{- $posts := where .Site.RegularPages "Section" "posts" -}}
-{{- range $yearIndex, $year := $posts.GroupByDate "2006" -}}
+{{- $yearGroups := $posts.GroupByDate "2006" -}}
+{{- $yearCount := len $yearGroups -}}
+{{- range $yearIndex, $year := $yearGroups }}
 <span class="timeline-year">{{ $year.Key }}</span>
  │
 {{- $months := $year.Pages.GroupByDate "January" -}}
@@ -43,8 +45,12 @@
  │
 {{- end -}}
 {{- end }}
+{{- $isLastYear := eq (add $yearIndex 1) $yearCount -}}
+{{- if not $isLastYear }}
+
 {{- end }}
-    </pre>
+{{- end }}
+</pre>
   </div>
 </section>
 
