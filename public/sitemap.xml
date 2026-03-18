@@ -2,10 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.siccsegv.in/posts/a_case_for_ctfs/</loc>
-    <lastmod>2025-03-13T00:00:00+00:00</lastmod>
+    <loc>https://blog.siccsegv.in/tags/ai/</loc>
+    <lastmod>2026-03-18T17:30:54+05:30</lastmod>
   </url><url>
     <loc>https://blog.siccsegv.in/categories/</loc>
+    <lastmod>2026-03-18T17:30:54+05:30</lastmod>
+  </url><url>
+    <loc>https://blog.siccsegv.in/tags/linux/</loc>
+    <lastmod>2026-03-18T17:30:54+05:30</lastmod>
+  </url><url>
+    <loc>https://blog.siccsegv.in/tags/opensource/</loc>
+    <lastmod>2026-03-18T17:30:54+05:30</lastmod>
+  </url><url>
+    <loc>https://blog.siccsegv.in/posts/</loc>
+    <lastmod>2026-03-18T17:30:54+05:30</lastmod>
+  </url><url>
+    <loc>https://blog.siccsegv.in/</loc>
+    <lastmod>2026-03-18T17:30:54+05:30</lastmod>
+  </url><url>
+    <loc>https://blog.siccsegv.in/categories/smol-web/</loc>
+    <lastmod>2026-03-18T17:30:54+05:30</lastmod>
+  </url><url>
+    <loc>https://blog.siccsegv.in/tags/</loc>
+    <lastmod>2026-03-18T17:30:54+05:30</lastmod>
+  </url><url>
+    <loc>https://blog.siccsegv.in/posts/ai_hype/</loc>
+    <lastmod>2026-03-18T17:30:54+05:30</lastmod>
+  </url><url>
+    <loc>https://blog.siccsegv.in/posts/a_case_for_ctfs/</loc>
     <lastmod>2025-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.siccsegv.in/tags/command-line/</loc>
@@ -15,18 +39,6 @@
     <lastmod>2025-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.siccsegv.in/tags/learning/</loc>
-    <lastmod>2025-03-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.siccsegv.in/tags/linux/</loc>
-    <lastmod>2025-03-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.siccsegv.in/posts/</loc>
-    <lastmod>2025-03-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.siccsegv.in/</loc>
-    <lastmod>2025-03-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.siccsegv.in/tags/</loc>
     <lastmod>2025-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.siccsegv.in/categories/unix-philosophy/</loc>
@@ -75,9 +87,6 @@
     <lastmod>2025-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.siccsegv.in/tags/protocol/</loc>
-    <lastmod>2025-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.siccsegv.in/categories/smol-web/</loc>
     <lastmod>2025-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.siccsegv.in/posts/introduction_to_ssh/</loc>
