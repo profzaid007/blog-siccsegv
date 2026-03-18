@@ -1,7 +1,6 @@
 baseURL = 'https://blog.siccsegv.in/'
 languageCode = 'en-us'
 title = 'Siccsegv Blog'
-theme = ''
 
 [params]
   description = 'Technical insights, security research, and industry perspectives'

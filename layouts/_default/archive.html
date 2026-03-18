@@ -23,17 +23,26 @@
 {{- range $yearIndex, $year := $posts.GroupByDate "2006" -}}
 <span class="timeline-year">{{ $year.Key }}</span>
  │
-{{- range $monthIndex, $month := $year.Pages.GroupByDate "January" -}}
-{{- $isLastMonth := eq (add $monthIndex 1) (len ($year.Pages.GroupByDate "January")) -}}
- {{- if $isLastMonth }}└─{{- else }}├─{{- end }}<span class="timeline-month">● {{ $month.Key }}</span> <span class="timeline-count">({{ len $month.Pages }} post{{- if ne (len $month.Pages) 1 }}s{{- end }})</span>
+{{- $months := $year.Pages.GroupByDate "January" -}}
+{{- $monthCount := len $months -}}
+{{- range $monthIndex, $month := $months -}}
+{{- $isLastMonth := eq (add $monthIndex 1) $monthCount -}}
+{{- $monthBranch := "├─" -}}
+{{- if $isLastMonth }}{{- $monthBranch = "└─" -}}{{- end }}
+ {{ $monthBranch }}<span class="timeline-month">● {{ $month.Key }}</span> <span class="timeline-count">({{ len $month.Pages }} post{{- if ne (len $month.Pages) 1 }}s{{- end }})</span>
+{{- $postCount := len $month.Pages -}}
+{{- $vertBar := "│" -}}
+{{- if $isLastMonth }}{{- $vertBar = " " -}}{{- end -}}
 {{- range $postIndex, $post := $month.Pages -}}
-{{- $isLastPost := eq (add $postIndex 1) (len $month.Pages) }}
- │  {{- if $isLastMonth }}  {{- else }}│ {{- end }}{{- if $isLastPost }}└─{{- else }}├─{{- end }} <a href="{{ $post.Permalink }}">{{ $post.Date.Format "Jan 02" }}: {{ $post.Title }}</a>
-{{- end -}}
+{{- $isLastPost := eq (add $postIndex 1) $postCount -}}
+{{- $postBranch := "├─" -}}
+{{- if $isLastPost }}{{- $postBranch = "└─" -}}{{- end }}
+ {{ $vertBar }}  {{ $postBranch }} <a href="{{ $post.Permalink }}">{{ $post.Date.Format "Jan 02" }}: {{ $post.Title }}</a>
+{{- end }}
 {{- if not $isLastMonth }}
  │
 {{- end -}}
-{{- end -}}
+{{- end }}
 {{- end }}
     </pre>
   </div>

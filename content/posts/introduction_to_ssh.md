@@ -15,12 +15,8 @@ This essentially meant that any malicious actor sniffing the traffic could not o
 If you have ssh installed on any operating system, you can access it by opening the terminal and simply typing "ssh". 
 You would most likely see an output quite similar to this: 
 
-```
-usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address] [-c cipher_spec] [-D [bind_address:]port] 
-[-Elog_file] [-e escape_char] [-F configfile] [-I pkcs11] [-i identity_file] [-J destination] [-L address] [-l login_name] 
-[-m mac_spec] [-O ctl_cmd] [-o option] [-P tag] [-p port] [-R address] [-S ctl_path] [-W host:port] 
-[-w local_tun[:remote_tun]] destination [command [argument ...]] ssh [-Q query_option]
-```
+```usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address] [-c cipher_spec].....```
+
 
 This enumerates all the different parameters that ssh provides. You would not be needing most of this when you simply want to connect to a server. The syntax for establishing an ssh connection in its generic sense is "ssh user_name@domain_name/ip". If for example I want to connect to the server jetbrains.org with the username martian the syntax would be: 
 
@@ -59,6 +55,7 @@ Host jetb
 	Port 22
 	IdentityFile ~/.ssh/secure_ssh_key
 ```
+<br>
 
 Host refers to the term I would use to connect to the server. Hostname is the actual domain or the ip of the server. User and Port are self explanatory and IdentityFile is the path to my private key. With this entry in ~/.ssh/config I can simply connect to jetbrains.org with the following command:
 

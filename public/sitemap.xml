@@ -2,168 +2,168 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/a_case_for_ctfs/</loc>
+    <loc>https://blog.siccsegv.in/posts/a_case_for_ctfs/</loc>
     <lastmod>2025-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://blog.siccsegv.in/categories/</loc>
     <lastmod>2025-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/command-line/</loc>
+    <loc>https://blog.siccsegv.in/tags/command-line/</loc>
     <lastmod>2025-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ctf/</loc>
+    <loc>https://blog.siccsegv.in/tags/ctf/</loc>
     <lastmod>2025-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/learning/</loc>
+    <loc>https://blog.siccsegv.in/tags/learning/</loc>
     <lastmod>2025-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
+    <loc>https://blog.siccsegv.in/tags/linux/</loc>
     <lastmod>2025-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://blog.siccsegv.in/posts/</loc>
     <lastmod>2025-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://blog.siccsegv.in/</loc>
     <lastmod>2025-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://blog.siccsegv.in/tags/</loc>
     <lastmod>2025-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/unix-philosophy/</loc>
+    <loc>https://blog.siccsegv.in/categories/unix-philosophy/</loc>
     <lastmod>2025-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/career/</loc>
+    <loc>https://blog.siccsegv.in/tags/career/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/cybersecurity/</loc>
+    <loc>https://blog.siccsegv.in/categories/cybersecurity/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cybersecurity/</loc>
+    <loc>https://blog.siccsegv.in/tags/cybersecurity/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/education/</loc>
+    <loc>https://blog.siccsegv.in/tags/education/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hacking/</loc>
+    <loc>https://blog.siccsegv.in/tags/hacking/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/career_in_cybersecurity/</loc>
+    <loc>https://blog.siccsegv.in/posts/career_in_cybersecurity/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/cybersecurity_in_the_modern_world/</loc>
+    <loc>https://blog.siccsegv.in/posts/cybersecurity_in_the_modern_world/</loc>
     <lastmod>2025-03-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/data-breach/</loc>
+    <loc>https://blog.siccsegv.in/tags/data-breach/</loc>
     <lastmod>2025-03-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/security/</loc>
+    <loc>https://blog.siccsegv.in/tags/security/</loc>
     <lastmod>2025-03-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/statistics/</loc>
+    <loc>https://blog.siccsegv.in/tags/statistics/</loc>
     <lastmod>2025-03-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/gemini/</loc>
+    <loc>https://blog.siccsegv.in/tags/gemini/</loc>
     <lastmod>2025-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/introduction_to_gemini/</loc>
+    <loc>https://blog.siccsegv.in/posts/introduction_to_gemini/</loc>
     <lastmod>2025-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/minimalism/</loc>
+    <loc>https://blog.siccsegv.in/tags/minimalism/</loc>
     <lastmod>2025-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/privacy/</loc>
+    <loc>https://blog.siccsegv.in/tags/privacy/</loc>
     <lastmod>2025-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/protocol/</loc>
+    <loc>https://blog.siccsegv.in/tags/protocol/</loc>
     <lastmod>2025-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/smol-web/</loc>
+    <loc>https://blog.siccsegv.in/categories/smol-web/</loc>
     <lastmod>2025-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/introduction_to_ssh/</loc>
+    <loc>https://blog.siccsegv.in/posts/introduction_to_ssh/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/linux/</loc>
+    <loc>https://blog.siccsegv.in/categories/linux/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/networking/</loc>
+    <loc>https://blog.siccsegv.in/tags/networking/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ssh/</loc>
+    <loc>https://blog.siccsegv.in/tags/ssh/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cli/</loc>
+    <loc>https://blog.siccsegv.in/tags/cli/</loc>
     <lastmod>2025-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/gui/</loc>
+    <loc>https://blog.siccsegv.in/tags/gui/</loc>
     <lastmod>2025-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/should_you_use_the_commandline/</loc>
+    <loc>https://blog.siccsegv.in/posts/should_you_use_the_commandline/</loc>
     <lastmod>2025-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/terminal/</loc>
+    <loc>https://blog.siccsegv.in/tags/terminal/</loc>
     <lastmod>2025-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/open-source/</loc>
+    <loc>https://blog.siccsegv.in/tags/open-source/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/operating-system/</loc>
+    <loc>https://blog.siccsegv.in/tags/operating-system/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/philosophy/</loc>
+    <loc>https://blog.siccsegv.in/tags/philosophy/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/why_use_linux/</loc>
+    <loc>https://blog.siccsegv.in/posts/why_use_linux/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/the_lost_operating_system/</loc>
+    <loc>https://blog.siccsegv.in/posts/the_lost_operating_system/</loc>
     <lastmod>2025-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/user-experience/</loc>
+    <loc>https://blog.siccsegv.in/tags/user-experience/</loc>
     <lastmod>2025-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cryptography/</loc>
+    <loc>https://blog.siccsegv.in/tags/cryptography/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/encryption/</loc>
+    <loc>https://blog.siccsegv.in/tags/encryption/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/public-key/</loc>
+    <loc>https://blog.siccsegv.in/tags/public-key/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/symmetric-key/</loc>
+    <loc>https://blog.siccsegv.in/tags/symmetric-key/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/what_is_cryptography/</loc>
+    <loc>https://blog.siccsegv.in/posts/what_is_cryptography/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/accessibility/</loc>
+    <loc>https://blog.siccsegv.in/tags/accessibility/</loc>
     <lastmod>2025-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/introduction_to_webapp/</loc>
+    <loc>https://blog.siccsegv.in/posts/introduction_to_webapp/</loc>
     <lastmod>2025-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/software/</loc>
+    <loc>https://blog.siccsegv.in/tags/software/</loc>
     <lastmod>2025-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/web-applications/</loc>
+    <loc>https://blog.siccsegv.in/tags/web-applications/</loc>
     <lastmod>2025-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/osi-model/</loc>
+    <loc>https://blog.siccsegv.in/tags/osi-model/</loc>
     <lastmod>2025-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/programming/</loc>
+    <loc>https://blog.siccsegv.in/categories/programming/</loc>
     <lastmod>2025-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/protocols/</loc>
+    <loc>https://blog.siccsegv.in/tags/protocols/</loc>
     <lastmod>2025-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tcp-ip/</loc>
+    <loc>https://blog.siccsegv.in/tags/tcp-ip/</loc>
     <lastmod>2025-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/what_is_osi/</loc>
+    <loc>https://blog.siccsegv.in/posts/what_is_osi/</loc>
     <lastmod>2025-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archive/</loc>
+    <loc>https://blog.siccsegv.in/archive/</loc>
   </url>
 </urlset>

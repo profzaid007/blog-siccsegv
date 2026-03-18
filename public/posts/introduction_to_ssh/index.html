@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
   
   <meta name="keywords" content="SSH, secure shell, linux, remote access">
   
-  <link rel="canonical" href="http://localhost:1313/posts/introduction_to_ssh/">
+  <link rel="canonical" href="https://blog.siccsegv.in/posts/introduction_to_ssh/">
   <link rel="shortcut icon" href="https://siccsegv.in/static/img/icon1.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -108,11 +108,8 @@
 <p>This essentially meant that any malicious actor sniffing the traffic could not only intercept the credentials of the user but also any information that was being passed to and fro. Telent had to be relegated to the past primarily for this reason which made way for its faster and more secure replacement, SSH. The Secure Shell program brought in several mechanisms to address the limitations of telnet. It introduced asymmetric encryption so that all the traffic remained indecipherable. It also protected the integrity of the data that was being transmitted, while also providing alternate ways of authentication. Within a few years of its inception, ssh was adopted worldwide as the de facto standard to establish connections to servers. However unlike its daunting capabilities, using ssh is quite straightforward.</p>
 <p>If you have ssh installed on any operating system, you can access it by opening the terminal and simply typing &ldquo;ssh&rdquo;.
 You would most likely see an output quite similar to this:</p>
-<pre tabindex="0"><code>usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address] [-c cipher_spec] [-D [bind_address:]port] 
-[-Elog_file] [-e escape_char] [-F configfile] [-I pkcs11] [-i identity_file] [-J destination] [-L address] [-l login_name] 
-[-m mac_spec] [-O ctl_cmd] [-o option] [-P tag] [-p port] [-R address] [-S ctl_path] [-W host:port] 
-[-w local_tun[:remote_tun]] destination [command [argument ...]] ssh [-Q query_option]
-</code></pre><p>This enumerates all the different parameters that ssh provides. You would not be needing most of this when you simply want to connect to a server. The syntax for establishing an ssh connection in its generic sense is &ldquo;ssh user_name@domain_name/ip&rdquo;. If for example I want to connect to the server jetbrains.org with the username martian the syntax would be:</p>
+<p><code>usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address] [-c cipher_spec].....</code></p>
+<p>This enumerates all the different parameters that ssh provides. You would not be needing most of this when you simply want to connect to a server. The syntax for establishing an ssh connection in its generic sense is &ldquo;ssh user_name@domain_name/ip&rdquo;. If for example I want to connect to the server jetbrains.org with the username martian the syntax would be:</p>
 <p><code>ssh martian@jetbrains.org</code></p>
 <p>Depending on the server, this would prompt for a password or directly drop us into a shell if public key authentication is configured. The ip of the server can also be used instead of the domain.</p>
 <p><code>ssh martian@100.54.11.24</code></p>
@@ -132,7 +129,8 @@ You would most likely see an output quite similar to this:</p>
 	User martian
 	Port 22
 	IdentityFile ~/.ssh/secure_ssh_key
-</code></pre><p>Host refers to the term I would use to connect to the server. Hostname is the actual domain or the ip of the server. User and Port are self explanatory and IdentityFile is the path to my private key. With this entry in ~/.ssh/config I can simply connect to jetbrains.org with the following command:</p>
+</code></pre><br>
+<p>Host refers to the term I would use to connect to the server. Hostname is the actual domain or the ip of the server. User and Port are self explanatory and IdentityFile is the path to my private key. With this entry in ~/.ssh/config I can simply connect to jetbrains.org with the following command:</p>
 <p><code>ssh jetb</code></p>
 <p>This would automatically look for the host &ldquo;jetb&rdquo; in config file and apply all the specifications required to make the connection. Although programs like anydesk allow you to perform similar functions through a GUI, using ssh is certainly more immersive. With a few keystrokes you are literally inside a computer that could be millions of miles away and any initial experience of that is nothing less than magical.</p>
 <p>For a novice user ssh might be his first introduction into the world of UNIX so the syntax might seem a little cryptic at first. I think it is important to understand that each command and its syntax have a clear underlying logic to them that can be applied to other commands. The arguments and flags might vary but the essential structure itself remains the same. So this is partly not just an introduction to ssh but also to how commands themselves are in the UNIX world.</p>
@@ -144,16 +142,16 @@ You would most likely see an output quite similar to this:</p>
       <div class="share-section">
         <h4>Share this article</h4>
         <div class="share-buttons">
-          <a href="https://twitter.com/intent/tweet?text=An%20Introduction%20to%20SSH&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fintroduction_to_ssh%2f" class="share-btn twitter" target="_blank" rel="noopener noreferrer">
+          <a href="https://twitter.com/intent/tweet?text=An%20Introduction%20to%20SSH&url=https%3a%2f%2fblog.siccsegv.in%2fposts%2fintroduction_to_ssh%2f" class="share-btn twitter" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-twitter"></i> Twitter
           </a>
-          <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fintroduction_to_ssh%2f" class="share-btn linkedin" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fblog.siccsegv.in%2fposts%2fintroduction_to_ssh%2f" class="share-btn linkedin" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-linkedin"></i> LinkedIn
           </a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fintroduction_to_ssh%2f" class="share-btn facebook" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.siccsegv.in%2fposts%2fintroduction_to_ssh%2f" class="share-btn facebook" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-facebook"></i> Facebook
           </a>
-          <a href="#" class="share-btn copy" onclick="navigator.clipboard.writeText('http:\/\/localhost:1313\/posts\/introduction_to_ssh\/'); alert('Link copied!'); return false;">
+          <a href="#" class="share-btn copy" onclick="navigator.clipboard.writeText('https:\/\/blog.siccsegv.in\/posts\/introduction_to_ssh\/'); alert('Link copied!'); return false;">
             <i class="fa-solid fa-link"></i> Copy Link
           </a>
         </div>
@@ -190,7 +188,7 @@ You would most likely see an output quite similar to this:</p>
   </div>
   
   <h3 class="post-card-title">
-    <a href="http://localhost:1313/posts/why_use_linux/">
+    <a href="https://blog.siccsegv.in/posts/why_use_linux/">
       Why Use Linux?
     </a>
   </h3>
@@ -221,7 +219,7 @@ You would most likely see an output quite similar to this:</p>
   </div>
   
   <h3 class="post-card-title">
-    <a href="http://localhost:1313/posts/a_case_for_ctfs/">
+    <a href="https://blog.siccsegv.in/posts/a_case_for_ctfs/">
       A Case for CTFs
     </a>
   </h3>
@@ -252,7 +250,7 @@ You would most likely see an output quite similar to this:</p>
   </div>
   
   <h3 class="post-card-title">
-    <a href="http://localhost:1313/posts/cybersecurity_in_the_modern_world/">
+    <a href="https://blog.siccsegv.in/posts/cybersecurity_in_the_modern_world/">
       Cybersecurity in the Modern World
     </a>
   </h3>
