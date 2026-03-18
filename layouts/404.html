@@ -1,0 +1,61 @@
+{{ define "main" }}
+<section class="error-section">
+  <div class="container">
+    <div class="error-container">
+      <pre class="error-ascii">
+ _  _    ___  _  _   
+| || |  / _ \| || |  
+| || |_| | | | || |_ 
+|__   _| |_| |__   _|
+   |_|  \___/   |_|  
+                     
+ERROR: Page Not Found
+      </pre>
+      
+      <div class="error-content">
+        <h1 class="error-title">404: Segmentation Fault<span class="cursor">_</span></h1>
+        <p class="error-message">
+          The page you're looking for doesn't exist in our memory space.
+          Perhaps it was freed prematurely, or the pointer was never initialized.
+        </p>
+        
+        <div class="terminal-box">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="btn-close"></span>
+              <span class="btn-minimize"></span>
+              <span class="btn-maximize"></span>
+            </div>
+            <span class="terminal-title">~/blog/404 $</span>
+          </div>
+          <div class="terminal-body">
+            <p class="terminal-line">
+              <span class="prompt">$</span> 
+              <span class="command">ls -la {{ .RelPermalink }}</span>
+            </p>
+            <p class="terminal-output error-output">
+              ls: cannot access '{{ .RelPermalink }}': No such file or directory
+            </p>
+            <p class="terminal-line">
+              <span class="prompt">$</span> 
+              <span class="command">cd /blog<span class="cursor">_</span></span>
+            </p>
+          </div>
+        </div>
+        
+        <div class="error-actions">
+          <a href="/" class="btn-primary">
+            <i class="fa-solid fa-home"></i> Return Home
+          </a>
+          <a href="/archive" class="btn-secondary">
+            <i class="fa-solid fa-archive"></i> Browse Archive
+          </a>
+          <a href="/categories" class="btn-secondary">
+            <i class="fa-solid fa-folder"></i> View Categories
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

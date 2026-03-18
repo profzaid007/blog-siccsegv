@@ -1,0 +1,110 @@
+{{ define "main" }}
+<!-- Article -->
+<article class="blog-post">
+  <div class="post-container">
+    <!-- Post Header -->
+    <header class="post-header">
+      <div class="post-breadcrumb">
+        <a href="/">Blog</a>
+        <span>/</span>
+        {{ with index .Params.categories 0 }}
+          <span>{{ . }}</span>
+        {{ end }}
+      </div>
+
+      <h1 class="post-heading">
+        {{ .Title }}
+      </h1>
+
+      <div class="post-details">
+        <div class="post-author">
+          <div class="author-avatar">
+            <i class="fa-solid fa-user-secret"></i>
+          </div>
+          <div class="author-info">
+            <span class="author-name">{{ .Site.Params.author }}</span>
+            <span class="author-role">{{ .Site.Params.authorRole }}</span>
+          </div>
+        </div>
+
+        <div class="post-info">
+          <span class="info-item">
+            <i class="fa-solid fa-calendar"></i>
+            {{ .Date.Format "January 2, 2006" }}
+          </span>
+          <span class="info-item">
+            <i class="fa-solid fa-clock"></i>
+            {{ .ReadingTime }} min read
+          </span>
+          {{ with index .Params.categories 0 }}
+            <span class="info-item">
+              <i class="fa-solid fa-tag"></i>
+              {{ . }}
+            </span>
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="post-tags-header">
+        {{ range .Params.tags }}
+          <span class="post-tag">#{{ . }}</span>
+        {{ end }}
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <div class="post-body">
+      {{ .Content }}
+    </div>
+
+    <!-- Post Footer -->
+    <footer class="post-footer">
+      <div class="share-section">
+        <h4>Share this article</h4>
+        <div class="share-buttons">
+          <a href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}" class="share-btn twitter" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-twitter"></i> Twitter
+          </a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" class="share-btn linkedin" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" class="share-btn facebook" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook"></i> Facebook
+          </a>
+          <a href="#" class="share-btn copy" onclick="navigator.clipboard.writeText('{{ .Permalink }}'); alert('Link copied!'); return false;">
+            <i class="fa-solid fa-link"></i> Copy Link
+          </a>
+        </div>
+      </div>
+
+      <div class="author-box">
+        <div class="author-avatar-large">
+          <i class="fa-solid fa-user-secret"></i>
+        </div>
+        <div class="author-details">
+          <h4>Written by {{ .Site.Params.author }}</h4>
+          <p>{{ .Site.Params.authorBio }}</p>
+          <a href="{{ .Site.Params.mainSite }}#contact" class="author-cta">
+            Work with us →
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</article>
+
+<!-- Related Posts (AUTOMATIC!) -->
+{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ if $related }}
+<section class="related-posts">
+  <div class="container-narrow">
+    <h3 class="related-title">Related Articles<span class="cursor">_</span></h3>
+    <div class="related-grid">
+      {{ range $related }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

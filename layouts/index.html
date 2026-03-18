@@ -1,0 +1,125 @@
+{{ define "main" }}
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="terminal-prompt">
+        <span class="prompt-symbol">$</span>
+        <span class="prompt-text">cd /blog && cat latest.md</span>
+      </div>
+      <h1 class="hero-title">Deep Dives Into Security<span class="cursor">_</span></h1>
+      <p class="hero-subtitle">
+        Penetration testing methodologies, exploit development, infrastructure hardening,
+        and everything in between. Written by practitioners, for practitioners.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Post -->
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ with (first 1 $posts) }}
+<section class="featured-section">
+  <div class="container">
+    <div class="section-badge">
+      <span class="badge-icon">●</span> LATEST POST
+    </div>
+    
+    {{ range . }}
+    <article class="featured-post">
+      <div class="post-meta">
+        <span class="post-date">
+          <i class="fa-solid fa-calendar"></i> {{ .Date.Format "January 2, 2006" }}
+        </span>
+        <span class="post-reading-time">
+          <i class="fa-solid fa-clock"></i> {{ .ReadingTime }} min read
+        </span>
+      </div>
+      
+      <h2 class="post-title">
+        <a href="{{ .Permalink }}">
+          {{ .Title }}
+        </a>
+      </h2>
+      
+      <p class="post-excerpt">
+        {{ if .Description }}
+          {{ .Description }}
+        {{ else }}
+          {{ .Summary }}
+        {{ end }}
+      </p>
+      
+      <div class="post-footer">
+        <div class="post-tags">
+          {{ range .Params.categories }}
+            <span class="tag">{{ . }}</span>
+          {{ end }}
+        </div>
+        <a href="{{ .Permalink }}" class="read-more">
+          Read Article <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+<!-- All Posts -->
+<section class="posts-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Recent Articles<span class="cursor">_</span></h2>
+      <div class="filter-tabs">
+        <button class="filter-tab active">All</button>
+        <a href="/categories/cybersecurity" class="filter-tab">Cybersecurity</a>
+        <a href="/categories/unix-philosophy" class="filter-tab">UNIX Philosophy</a>
+        <a href="/categories/linux" class="filter-tab">Linux</a>
+      </div>
+    </div>
+
+    <div class="posts-grid">
+      {{ range first 6 (after 1 $posts) }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
+    
+    <!-- Load More -->
+    <div class="load-more-section">
+      <a href="/archive" class="btn-load-more">
+        View All Posts <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ASCII Art Philosophy Section -->
+{{ partial "ascii-cow.html" }}
+
+<!-- Terminal CTA -->
+<section class="terminal-section">
+  <div class="container">
+    <div class="terminal-box">
+      <div class="terminal-header">
+        <div class="terminal-buttons">
+          <span class="btn-close"></span>
+          <span class="btn-minimize"></span>
+          <span class="btn-maximize"></span>
+        </div>
+        <span class="terminal-title">~/blog $</span>
+      </div>
+      <div class="terminal-body">
+        <p class="terminal-line">
+          <span class="prompt">$</span> 
+          <span class="command">subscribe --newsletter</span>
+        </p>
+        <p class="terminal-output">
+          Get weekly security insights, exploit breakdowns, and technical deep-dives<br>
+          delivered straight to your inbox. No spam, no tracking, just pure knowledge.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

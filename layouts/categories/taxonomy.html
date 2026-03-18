@@ -1,0 +1,48 @@
+{{ define "main" }}
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="terminal-prompt">
+        <span class="prompt-symbol">$</span>
+        <span class="prompt-text">cd /blog/category/{{ .Title | urlize }} && ls -la</span>
+      </div>
+      <h1 class="hero-title">{{ .Title }}<span class="cursor">_</span></h1>
+      <p class="hero-subtitle">
+        {{ if eq .Title "Cybersecurity" }}
+          Protecting digital assets, understanding threats, and implementing security measures across 
+          networks, applications, and systems in today's threat landscape.
+        {{ else if eq .Title "Linux" }}
+          Exploring the power of Linux, from system administration to security hardening and automation.
+        {{ else if eq .Title "UNIX Philosophy" }}
+          Understanding the core principles of UNIX design: simplicity, modularity, and composability.
+        {{ else if eq .Title "Programming" }}
+          Code, algorithms, and software development practices from security practitioners.
+        {{ else if eq .Title "Smol Web" }}
+          Embracing minimalism on the web: lightweight protocols, simple designs, and user-respecting technologies.
+        {{ else }}
+          Browse all posts in this category.
+        {{ end }}
+      </p>
+      <p class="category-count">
+        <i class="fa-solid fa-folder"></i> {{ len .Pages }} post{{ if ne (len .Pages) 1 }}s{{ end }} in this category
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Posts -->
+<section class="posts-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">{{ .Title }} Posts<span class="cursor">_</span></h2>
+    </div>
+    
+    <div class="posts-grid">
+      {{ range .Pages }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,149 @@
+{{ define "main" }}
+<!-- Hero -->
+<section class="categories-hero">
+  <div class="container">
+    <div class="terminal-prompt">
+      <span class="prompt-symbol">$</span>
+      <span class="prompt-text">ls -la /blog/categories/</span>
+    </div>
+    <h1 class="hero-title">Browse by Category</h1>
+    <p class="hero-subtitle">
+      Explore our technical content organized by topic. From penetration testing to 
+      infrastructure hardening, find exactly what you're looking for.
+    </p>
+  </div>
+</section>
+
+<!-- Categories Grid -->
+<section class="categories-section">
+  <div class="container">
+     
+    <!-- Main Categories -->
+    <div class="categories-grid">
+      {{ range .Data.Terms.Alphabetical }}
+        {{ $category := .Page }}
+        {{ $posts := .Pages }}
+        {{ $latestPost := (index $posts 0) }}
+        
+        <!-- Determine if this is the featured category (first one or UNIX Philosophy) -->
+        {{ $isFeatured := eq $category.Title "UNIX Philosophy" }}
+        
+        <article class="category-card{{ if $isFeatured }} featured{{ end }}">
+          <div class="category-header">
+            <div class="category-icon 
+              {{- if eq $category.Title "UNIX Philosophy" }}unix
+              {{- else if eq $category.Title "Cybersecurity" }}cyber
+              {{- else if eq $category.Title "Smol Web" }}smolweb
+              {{- else if eq $category.Title "Linux" }}linux
+              {{- else if eq $category.Title "Programming" }}programming
+              {{- end }}">
+              {{- if eq $category.Title "UNIX Philosophy" }}
+                <i class="fa-solid fa-terminal"></i>
+              {{- else if eq $category.Title "Cybersecurity" }}
+                <i class="fa-solid fa-shield-halved"></i>
+              {{- else if eq $category.Title "Smol Web" }}
+                <i class="fa-solid fa-globe"></i>
+              {{- else if eq $category.Title "Linux" }}
+                <i class="fa-brands fa-linux"></i>
+              {{- else if eq $category.Title "Programming" }}
+                <i class="fa-solid fa-code"></i>
+              {{- else }}
+                <i class="fa-solid fa-folder-open"></i>
+              {{- end }}
+            </div>
+            <div class="category-meta">
+              <h2 class="category-title">
+                <a href="{{ $category.Permalink }}">{{ $category.Title }}</a>
+              </h2>
+              <span class="category-count">{{ .Count }} article{{ if ne .Count 1 }}s{{ end }}</span>
+            </div>
+          </div>
+          
+          <p class="category-description">
+            {{- if eq $category.Title "UNIX Philosophy" -}}
+              Exploring the philosophy and principles behind UNIX-like systems, command-line proficiency, 
+              and the mindset that drives effective system administration and development.
+            {{- else if eq $category.Title "Cybersecurity" -}}
+              Protecting digital assets, understanding threats, and implementing security measures across 
+              networks, applications, and systems in today's threat landscape.
+            {{- else if eq $category.Title "Smol Web" -}}
+              Embracing lightweight, minimalist web technologies that prioritize simplicity, privacy, 
+              and efficiency over bloat and complexity.
+            {{- else if eq $category.Title "Linux" -}}
+              Mastering Linux systems from command-line proficiency to administration, security, 
+              and optimization techniques for both personal and enterprise environments.
+            {{- else if eq $category.Title "Programming" -}}
+              Understanding foundational concepts in computer science and programming that form 
+              the basis of all software development and technical proficiency.
+            {{- else -}}
+              Browse all posts in this category.
+            {{- end -}}
+          </p>
+          
+          <!-- Mini tags derived from post tags -->
+          <div class="category-tags">
+            {{ $allTags := slice }}
+            {{ range $posts }}
+              {{ range .Params.tags }}
+                {{ $allTags = $allTags | append . }}
+              {{ end }}
+            {{ end }}
+            {{ $uniqueTags := uniq $allTags }}
+            {{ range first 4 $uniqueTags }}
+              <span class="mini-tag">{{ . | title }}</span>
+            {{ end }}
+          </div>
+          
+          <div class="category-footer">
+            {{ with $latestPost }}
+              <span class="latest-post">
+                <i class="fa-solid fa-clock"></i>
+                Latest: {{ .Title }}
+              </span>
+            {{ end }}
+            <a href="{{ $category.Permalink }}" class="category-link">
+              View All <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+     
+    <!-- Terminal Stats -->
+    <div class="categories-stats">
+      <div class="terminal-box">
+        <div class="terminal-header">
+          <div class="terminal-buttons">
+            <span class="btn-close"></span>
+            <span class="btn-minimize"></span>
+            <span class="btn-maximize"></span>
+          </div>
+          <span class="terminal-title">~/blog/stats $</span>
+        </div>
+        <div class="terminal-body">
+<pre class="stats-output">
+$ cat categories.stats
+
++-----------------------------------------------------+
+|                  CONTENT OVERVIEW                   |
++-----------------------------------------------------+
+|  Total Categories:        {{ len .Data.Terms }}                         |
+|  Total Articles:          {{ len (where .Site.RegularPages "Section" "posts") }}                        |
+|  Most Active:             {{ with (index (sort .Data.Terms "Count" "desc") 0) }}{{ .Page.Title }} ({{ .Count }}){{ end }}         |
+|  Most Recent:             {{ with (index (first 1 (where .Site.RegularPages "Section" "posts")) 0) }}{{ .Title }}{{ end }}            |
+|                                                     |
+|  Publishing Frequency:    Variable                  |
+|  Average Read Time:       5-15 minutes              |
+|                                                     |
+|  [*] All content peer-reviewed by security experts  |
++-----------------------------------------------------+
+
+$ <span class="cursor">_</span>
+</pre>
+        </div>
+      </div>
+    </div>
+     
+  </div>
+</section>
+{{ end }}

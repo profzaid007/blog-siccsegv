@@ -1,0 +1,31 @@
+<article class="post-card">
+  <div class="post-status">
+    <span class="status-badge new">● NEW</span>
+    <span class="post-date-small">{{ .Date.Format "Jan 2, 2006" }}</span>
+  </div>
+  
+  <h3 class="post-card-title">
+    <a href="{{ .Permalink }}">
+      {{ .Title }}
+    </a>
+  </h3>
+  
+  <p class="post-card-excerpt">
+    {{ if .Description }}
+      {{ .Description }}
+    {{ else }}
+      {{ .Summary }}
+    {{ end }}
+  </p>
+  
+  <div class="post-card-footer">
+    <div class="post-tags-small">
+      {{ range .Params.categories }}
+        <span class="tag-small">{{ . }}</span>
+      {{ end }}
+    </div>
+    <span class="read-time">
+      <i class="fa-solid fa-clock"></i> {{ .ReadingTime }} min
+    </span>
+  </div>
+</article>

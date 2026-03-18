@@ -1,0 +1,42 @@
+baseURL = 'https://blog.siccsegv.in/'
+languageCode = 'en-us'
+title = 'Siccsegv Blog'
+theme = ''
+
+[params]
+  description = 'Technical insights, security research, and industry perspectives'
+  tagline = '// Technical Insights & Security Research'
+  mainSite = 'https://siccsegv.in'
+  postsPerPage = 6
+  author = 'Siccsegv Team'
+  authorRole = 'Security Researchers'
+  authorBio = 'Security practitioners sharing technical insights and real-world experiences from the trenches of penetration testing and security research.'
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+  [[related.indices]]
+    name = 'categories'
+    weight = 100
+  [[related.indices]]
+    name = 'tags'
+    weight = 80
+  [[related.indices]]
+    name = 'date'
+    weight = 10
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ['HTML']
+  section = ['HTML']
+  taxonomy = ['HTML']
+  term = ['HTML']
