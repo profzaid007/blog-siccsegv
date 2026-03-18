@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Siccsegv Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://blog.siccsegv.in/</link>
     <description>Technical insights, security research, and industry perspectives</description>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/categories/unix-philosophy/" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.siccsegv.in/categories/unix-philosophy/" rel="self" type="application/rss+xml" />
     <generator>Hugo</generator>
 
     
     <item>
       <title>The AI Hype</title>
-      <link>http://localhost:1313/posts/ai_hype/</link>
-      <guid>http://localhost:1313/posts/ai_hype/</guid>
+      <link>https://blog.siccsegv.in/posts/ai_hype/</link>
+      <guid>https://blog.siccsegv.in/posts/ai_hype/</guid>
       <pubDate>Wed, 18 Mar 2026 17:30:54 IST</pubDate>
       <description>&lt;p&gt;In a previous blog on Linux, I talk about how the commonplace ignorance towards technology is becoming more detrimental with each day. This is an idea that one of my favourite writers Niel Stepehnson introduced in his essay &amp;ldquo;In the Beginning was the Command Line&amp;rdquo;. To provide a brief summary, the essay outlines the development of major operating systems and reflects on how since the inception of the &amp;ldquo;GUI&amp;rdquo;, end users have come to increasingly relinquish the control they have over computers. Ease of use always entails a certain amount of ignorance and sometimes it is warranted. But when this interface, which is supposed to facilitate unmitigated communication, falsifies or subtly leads you towards performing a specific task, it becomes something else entirely.&lt;/p&gt;
 &lt;p&gt;I have found this frame of reference extremely useful in discerning between good and bad software. If a particular program strives to be transparent and fulfills its task as effectively as possible, I usually consider it well written. Recently I have been exposed to a fair bit of discourse surrounding AI which prompted me to evaluate it along these lines. While some regard the technology to be revolutionary, others dismiss it altogether on the basis of describing AI to be nothing more than a glorified auto complete.&lt;/p&gt;
@@ -25,8 +25,8 @@
     
     <item>
       <title>A Case for CTFs</title>
-      <link>http://localhost:1313/posts/a_case_for_ctfs/</link>
-      <guid>http://localhost:1313/posts/a_case_for_ctfs/</guid>
+      <link>https://blog.siccsegv.in/posts/a_case_for_ctfs/</link>
+      <guid>https://blog.siccsegv.in/posts/a_case_for_ctfs/</guid>
       <pubDate>Thu, 13 Mar 2025 00:00:00 UTC</pubDate>
       <description>&lt;p&gt;During my initial forays in trying to acquaint myself with Linux, I was highly disenchanted by the fact that the users who had Linux as their primary operating system predominantly relied on the command line to navigate their machine and to perform general operations for which I had heretofore only used the GUI ( Graphical User Interface ). I felt that this Operating System was only reserved for those with the utmost technical expertise in computing and remained far from reach to a plebian like myself, who perceived the notion of interacting with machines through commands in utter perplexity. Isn&amp;rsquo;t it needlessly laborious to type a long string of commands to perform tasks as trivial as moving files or changing directories (called folders in Windows)? The benefits of this seemingly archaic mode of interaction weren&amp;rsquo;t apparent to me at first sight, but perhaps I was too new to this frontier to arrive at an unprejudiced conclusion.&lt;/p&gt;
 &lt;p&gt;Despite the innumerable difficulties I had faced in using theterminal, a zeal for mastering the command line sustained me through the misery of deserting my proclivity for clicking and dragging. But most importantly, a discovery I made that helped me immensely in the course of this venture was something called CTFs.&lt;/p&gt;
@@ -39,8 +39,8 @@
     
     <item>
       <title>Is a career in cybersecurity open to everyone?</title>
-      <link>http://localhost:1313/posts/career_in_cybersecurity/</link>
-      <guid>http://localhost:1313/posts/career_in_cybersecurity/</guid>
+      <link>https://blog.siccsegv.in/posts/career_in_cybersecurity/</link>
+      <guid>https://blog.siccsegv.in/posts/career_in_cybersecurity/</guid>
       <pubDate>Mon, 10 Mar 2025 00:00:00 UTC</pubDate>
       <description>&lt;p&gt;Making cybersecurity a job has been more popular in recent years. As a cybersecurity practitioner, I am interested in sharing my practical knowledge of the industry and the challenges one must be prepared for when choosing cybersecurity.&lt;/p&gt;
 &lt;p&gt;Why you want to work in cybersecurity is the most crucial factor to consider while choosing a career route. I want to explain why. When I was younger, I was naturally curious and eager to utilise computers and discover new things. When I first  gained access to a desktop, there was little internet availability. I would frequently engage in CD-ROM gaming or  investigate the vast aspects of the operating system. I soon found various openings to take advantage of.&lt;/p&gt;
@@ -54,8 +54,8 @@ especially when I am passionate about it. It is always rewarding to assist a per
     
     <item>
       <title>Cybersecurity in the Modern World</title>
-      <link>http://localhost:1313/posts/cybersecurity_in_the_modern_world/</link>
-      <guid>http://localhost:1313/posts/cybersecurity_in_the_modern_world/</guid>
+      <link>https://blog.siccsegv.in/posts/cybersecurity_in_the_modern_world/</link>
+      <guid>https://blog.siccsegv.in/posts/cybersecurity_in_the_modern_world/</guid>
       <pubDate>Sat, 08 Mar 2025 00:00:00 UTC</pubDate>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
 &lt;p&gt;The world is awash in the sea of data. Sources and types of data are increasing rapidly, driven by the ubiquitous use of computing in science, commerce, engineering and even the humanities. Protecting crucial data, now more than ever, is an omnipresent concern for top companies across all industries (banking/finance, tech, government/military, entertainment, healthcare), with privacy slowly becoming an unattainable privilege.&lt;/p&gt;
@@ -83,8 +83,8 @@ The top malicious email attachment types are .doc and .dot, which make up 37%; t
     
     <item>
       <title>Gemini: A Refuge from the Bloat of the Modern Web</title>
-      <link>http://localhost:1313/posts/introduction_to_gemini/</link>
-      <guid>http://localhost:1313/posts/introduction_to_gemini/</guid>
+      <link>https://blog.siccsegv.in/posts/introduction_to_gemini/</link>
+      <guid>https://blog.siccsegv.in/posts/introduction_to_gemini/</guid>
       <pubDate>Wed, 05 Mar 2025 00:00:00 UTC</pubDate>
       <description>&lt;p&gt;Gemini, in its most technical sense, can be described as an internet protocol which serves files through a lightweight hypertext format. It was designed to replace its more antiquated predecessor the &amp;ldquo;gopher protocol&amp;rdquo; that worked on similar mechanisms. To elaborate on these technologies in less technical terms, they were both designed simply for the sharing and linking of textfiles that were interconnected and served as precursor to the modern web.&lt;/p&gt;
 &lt;p&gt;Although Gemini is a fairly recent innovation, gopher has existed for a long time but was eventually deserted because the protocol was not designed for most of the complicated tasks that current websites require for its functioning. Displaying embedded images and videos or creating an elaborate presentation for you work was not entirely feasible in a protocol that was simply designed to share textfiles. One could also share videos and other kinds of files through gopher but a framework for presenting an elaborate visual interface that most users found appealing was, however, non-existent.&lt;/p&gt;
@@ -97,8 +97,8 @@ The top malicious email attachment types are .doc and .dot, which make up 37%; t
     
     <item>
       <title>An Introduction to SSH</title>
-      <link>http://localhost:1313/posts/introduction_to_ssh/</link>
-      <guid>http://localhost:1313/posts/introduction_to_ssh/</guid>
+      <link>https://blog.siccsegv.in/posts/introduction_to_ssh/</link>
+      <guid>https://blog.siccsegv.in/posts/introduction_to_ssh/</guid>
       <pubDate>Sat, 01 Mar 2025 00:00:00 UTC</pubDate>
       <description>&lt;p&gt;SSH is a word that you might often see thrown around when talking about servers and connections. It is sometimes used as a noun in sentences but also as a verb. Its colloquial and sometimes unconventional usage in certain contexts might leave you confused on what exactly it means. Is it a program or does it denote an action that we do? Well, its technically the former. SSH abbreviates to &amp;ldquo;Secure Shell&amp;rdquo; and it is a program written by Tatu Ylonen to serve as a replacement to the telnet program. Ever since the early days of computing, users often found it necessary to connect to another computer from their local machine. This computer, often called a server, had specific pathways or ports open for users to establish a connection if they had the proper credentials. Telnet was widely used in these early stages but one of its biggest problems was that it transmitted all data in clear text.&lt;/p&gt;
 &lt;p&gt;This essentially meant that any malicious actor sniffing the traffic could not only intercept the credentials of the user but also any information that was being passed to and fro. Telent had to be relegated to the past primarily for this reason which made way for its faster and more secure replacement, SSH. The Secure Shell program brought in several mechanisms to address the limitations of telnet. It introduced asymmetric encryption so that all the traffic remained indecipherable. It also protected the integrity of the data that was being transmitted, while also providing alternate ways of authentication. Within a few years of its inception, ssh was adopted worldwide as the de facto standard to establish connections to servers. However unlike its daunting capabilities, using ssh is quite straightforward.&lt;/p&gt;
@@ -135,8 +135,8 @@ You would most likely see an output quite similar to this:&lt;/p&gt;
     
     <item>
       <title>Should You Use the Command Line?</title>
-      <link>http://localhost:1313/posts/should_you_use_the_commandline/</link>
-      <guid>http://localhost:1313/posts/should_you_use_the_commandline/</guid>
+      <link>https://blog.siccsegv.in/posts/should_you_use_the_commandline/</link>
+      <guid>https://blog.siccsegv.in/posts/should_you_use_the_commandline/</guid>
       <pubDate>Fri, 28 Feb 2025 00:00:00 UTC</pubDate>
       <description>&lt;p&gt;A large part of Linux might seem daunting to a novice user because it involves the command line. Unlike Windows or MacOS where the graphical interface is intertwined with the operating system itself, Linux&amp;rsquo;s GUI is simply another package that is installed. The system can function just the same without it because at its core it relies on something called &amp;ldquo;tty&amp;rdquo; to communicate with the user. Essentially ttys are virtual emulations of an old device called teletype which was used as one of the first input/output mechanism for computers. Although originally users communicated with computers primarily through text, we have come to replace this with a more appealing visual interface as it was easier to learn and navigate.&lt;/p&gt;
 &lt;p&gt;This course of events merits little explanation because using the tty required a reasonable grasp of commands and how the system itself functioned. The general public would not have been particularly enticed by the necessity of having to learn commands and syntax just so that they could use these machines. Most operating systems, as a result, have come to entirely replace this mechanism with a visual interface, making tty, even if it existed in certain systems, only a vestige of the past. Linux, on the other hand, still retained this part of history. One of the first things you would see when you install a minimal Linux distribution is just a black screen with a blinking white cursor, patiently waiting for you to programmatically express your will. Graphical interfaces are installed on top of this but you could still communicate with your system even in the absence of such mediation just like how you would 60 years ago.&lt;/p&gt;
@@ -151,8 +151,8 @@ You would most likely see an output quite similar to this:&lt;/p&gt;
     
     <item>
       <title>Why Use Linux?</title>
-      <link>http://localhost:1313/posts/why_use_linux/</link>
-      <guid>http://localhost:1313/posts/why_use_linux/</guid>
+      <link>https://blog.siccsegv.in/posts/why_use_linux/</link>
+      <guid>https://blog.siccsegv.in/posts/why_use_linux/</guid>
       <pubDate>Tue, 25 Feb 2025 00:00:00 UTC</pubDate>
       <description>&lt;h2 id=&#34;a-dismal-state-of-affairs&#34;&gt;A Dismal State of Affairs&lt;/h2&gt;
 &lt;p&gt;The indifference that people show towards technology has always surprised me. By indifference, I do not mean a general lack of interest. It is quite evident that people like to use the latest technology if they ever have the means to and do prefer to invest a lot of time before purchasing any electronic product. However this interest is almost never sustained when it pertains to how technology itself operates. To an end user the only thing that matters if they purchase a smartphone or a laptop is its purpose. If it lets you click a good picture or browse the internet with reasonable efficiency what more is there to know?&lt;/p&gt;
@@ -176,8 +176,8 @@ You would most likely see an output quite similar to this:&lt;/p&gt;
     
     <item>
       <title>The Lost Operating System</title>
-      <link>http://localhost:1313/posts/the_lost_operating_system/</link>
-      <guid>http://localhost:1313/posts/the_lost_operating_system/</guid>
+      <link>https://blog.siccsegv.in/posts/the_lost_operating_system/</link>
+      <guid>https://blog.siccsegv.in/posts/the_lost_operating_system/</guid>
       <pubDate>Thu, 20 Feb 2025 00:00:00 UTC</pubDate>
       <description>&lt;p&gt;In recent times, almost everyone when asked what operating system they use or are familiar with, their answer is simply Windows. The wide use of this operating system is due to the fact that it is easy to use, in other words &amp;ldquo;User Friendly&amp;rdquo;. However, there are a lot of misconsceptions in the
 understanding of how this operating system works. I will give you a brief explaination on what it actually is and what people often assume it to be.&lt;/p&gt;
@@ -190,8 +190,8 @@ typing on the keyboard or using the mouse, in order for the hardware in the devi
     
     <item>
       <title>What is Cryptography?</title>
-      <link>http://localhost:1313/posts/what_is_cryptography/</link>
-      <guid>http://localhost:1313/posts/what_is_cryptography/</guid>
+      <link>https://blog.siccsegv.in/posts/what_is_cryptography/</link>
+      <guid>https://blog.siccsegv.in/posts/what_is_cryptography/</guid>
       <pubDate>Sat, 15 Feb 2025 00:00:00 UTC</pubDate>
       <description>&lt;p&gt;Cryptography is the practice of secure communication through the use of codes. It involves converting plaintext (readable) messages into ciphertext(unreadable) messages and back again, using mathematical algorithms called cryptographic protocols. Cryptography is a fundamental aspect of cybersecurity and is used to protect sensitive information from being accessed by unauthorized parties.&lt;/p&gt;
 &lt;p&gt;There are two main types of cryptographic techniques:&lt;/p&gt;
@@ -219,8 +219,8 @@ typing on the keyboard or using the mouse, in order for the hardware in the devi
     
     <item>
       <title>Introduction to Web Applications</title>
-      <link>http://localhost:1313/posts/introduction_to_webapp/</link>
-      <guid>http://localhost:1313/posts/introduction_to_webapp/</guid>
+      <link>https://blog.siccsegv.in/posts/introduction_to_webapp/</link>
+      <guid>https://blog.siccsegv.in/posts/introduction_to_webapp/</guid>
       <pubDate>Mon, 10 Feb 2025 00:00:00 UTC</pubDate>
       <description>&lt;p&gt;Web applications are software programs accessed through a web browser over the internet. They have become increasingly popular in recent years due to their convenience,  accessibility, and ease of updating and maintaining.&lt;/p&gt;
 &lt;p&gt;One of the main advantages of web applications is their accessibility.  Because they are accessed through a web browser, we can use them on any device with an internet connection, including computers, smartphones, and tablets. This allows users to access the application from any location, making it easy to stay connected and productive on the go.&lt;/p&gt;
@@ -246,8 +246,8 @@ courses and learning resources for students and professionals.&lt;/p&gt;
     
     <item>
       <title>What is the OSI Model?</title>
-      <link>http://localhost:1313/posts/what_is_osi/</link>
-      <guid>http://localhost:1313/posts/what_is_osi/</guid>
+      <link>https://blog.siccsegv.in/posts/what_is_osi/</link>
+      <guid>https://blog.siccsegv.in/posts/what_is_osi/</guid>
       <pubDate>Sun, 05 Jan 2025 00:00:00 UTC</pubDate>
       <description>&lt;p&gt;The OSI model can be defined as a theoretical blueprint that defines how computers communicate with their respective protocols on a network. Thoughthis model is used comparatively less in the practical world, it has its own benefits. This seven-layered model is often used to troubleshoot. The OSI model, with each layer dissecting the network communications systems, helps individuals and major companies trace the source of the problem and troubleshoot it.&lt;/p&gt;
 &lt;p&gt;The OSI model has the respective seven abstract layers:&lt;/p&gt;

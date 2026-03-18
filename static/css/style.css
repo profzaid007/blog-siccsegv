@@ -146,6 +146,23 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--bg) !important;
 }
 
+.nav-label {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--muted);
+  padding: 0;
+}
+
+.nav-label:hover { color: var(--accent); }
+
+.nav-mobile {
+  display: none;
+}
+
 /* ============================================================
    Layout
    ============================================================ */
@@ -1044,7 +1061,8 @@ section {
 /* Responsive */
 @media (max-width: 768px) {
   .header-container {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 1rem;
   }
 
@@ -1092,6 +1110,54 @@ section {
 
   .philosophy-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Mobile Menu */
+  .nav { display: none; }
+  .nav-label { display: block; }
+
+  .nav-mobile.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    width: 200px;
+    background: var(--header-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.5rem 0;
+    z-index: 999;
+  }
+
+  .nav-mobile a {
+    display: block;
+    padding: 0.65rem 1.25rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+    font-family: var(--font-mono);
+  }
+
+  .nav-mobile a:last-child {
+    border-bottom: none;
+  }
+
+  .nav-mobile a:hover {
+    color: var(--accent);
+    background: rgba(20, 195, 142, 0.05);
+  }
+
+  .nav-mobile .nav-cta {
+    padding: 0.65rem 1.25rem;
+    color: var(--accent) !important;
+    border: none;
+    border-radius: 0;
+  }
+
+  .nav-mobile .nav-cta:hover {
+    background: var(--accent);
+    color: var(--bg) !important;
   }
 }
 
