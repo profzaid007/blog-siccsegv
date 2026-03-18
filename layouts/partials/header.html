@@ -8,6 +8,11 @@
       <span class="blog-tagline">{{ .Site.Params.tagline }}</span>
     </div>
     <nav class="nav">
+      {{ with .OutputFormats.Get "rss" }}
+        <a href="{{ .Permalink }}" class="nav-rss" title="RSS Feed" target="_blank">
+          <i class="fa-solid fa-rss"></i>
+        </a>
+      {{ end }}
       <a href="/">All Posts</a>
       <a href="/categories">Categories</a>
       <a href="/archive">Archive</a>
