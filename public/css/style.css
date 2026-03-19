@@ -1159,6 +1159,10 @@ section {
     background: var(--accent);
     color: var(--bg) !important;
   }
+
+  .ascii-art { 
+    font-size: 0.7rem;
+  } 
 }
 
 /* ============================================================
