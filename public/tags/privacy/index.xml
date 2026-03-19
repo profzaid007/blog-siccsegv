@@ -3,7 +3,7 @@
   <channel>
     <title>Siccsegv Blog</title>
     <link>https://blog.siccsegv.in/</link>
-    <description>Technical insights, security research, and industry perspectives</description>
+    <description>Insights into technology, cybersecurity, philosophy and all that lies in between</description>
     <language>en-us</language>
     <atom:link href="https://blog.siccsegv.in/tags/privacy/" rel="self" type="application/rss+xml" />
     <generator>Hugo</generator>

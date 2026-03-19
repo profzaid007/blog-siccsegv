@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Siccsegv Blog'
 
 [params]
-  description = 'Technical insights, security research, and industry perspectives'
+  description = 'Insights into technology, cybersecurity, philosophy and all that lies in between'
   tagline = '// Technical Insights & Security Research'
   mainSite = 'https://siccsegv.in'
   postsPerPage = 6
