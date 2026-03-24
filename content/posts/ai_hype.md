@@ -1,7 +1,7 @@
 ---
 title: "The AI Hype"
 date: 2026-03-18T17:30:54+05:30
-description: "On th recent push towards AI"
+description: "On the recent push towards AI"
 categories: ["Smol Web"]
 tags: ["linux", "opensource", "ai"]
 draft: false 
