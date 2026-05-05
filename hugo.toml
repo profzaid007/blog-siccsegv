@@ -1,11 +1,11 @@
-baseURL = 'https://blog.siccsegv.in/'
+baseURL = 'https://blog.siccsegv.com/'
 languageCode = 'en-us'
 title = 'Siccsegv Blog'
 
 [params]
   description = 'Insights into technology, cybersecurity, philosophy and all that lies in between'
   tagline = '// Technical Insights & Security Research'
-  mainSite = 'https://siccsegv.in'
+  mainSite = 'https://siccsegv.com'
   postsPerPage = 6
   author = 'Siccsegv Team'
   authorRole = 'Security Researchers'
