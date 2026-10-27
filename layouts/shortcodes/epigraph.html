@@ -1,0 +1,23 @@
+{{- /*
+  Epigraph: an opening quote with attribution.
+
+  Usage:
+    {{< epigraph author="Edsger W. Dijkstra" source="Structured Programming" >}}
+    Simplicity is prerequisite for reliability.
+    {{< /epigraph >}}
+*/ -}}
+
+{{- $author := .Get "author" -}}
+{{- $source := .Get "source" -}}
+
+<figure class="epigraph">
+  <blockquote class="epigraph__quote">
+    {{ .Inner | .Page.RenderString }}
+  </blockquote>
+  {{- if or $author $source }}
+  <figcaption class="epigraph__source">
+    {{- with $author }}<span class="epigraph__author">{{ . }}</span>{{ end }}
+    {{- with $source }}<cite class="epigraph__work">{{ . }}</cite>{{ end }}
+  </figcaption>
+  {{- end }}
+</figure>

@@ -1,0 +1,15 @@
+{{- /*
+  Assumed audience: a short note stating who the piece is written for.
+
+  Usage:
+    {{< audience >}}
+    Developers evaluating AI coding tools.
+    {{< /audience >}}
+*/ -}}
+
+<aside class="audience">
+  <p class="audience__label">Assumed audience</p>
+  <div class="audience__body">
+    {{ .Inner | .Page.RenderString }}
+  </div>
+</aside>

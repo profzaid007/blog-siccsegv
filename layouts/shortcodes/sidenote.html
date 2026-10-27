@@ -1,0 +1,12 @@
+{{- /*
+  Margin note.
+
+  Usage:
+    Some sentence.{{< sidenote >}}A short aside in plain Markdown.{{< /sidenote >}}
+
+  On wide screens the note floats into the right margin; below 1280px it
+  collapses to an inline parenthetical. Keep notes short (one or two
+  sentences) so they stay readable in the margin.
+*/ -}}
+
+<span class="sidenote"><span class="sidenote__marker" aria-hidden="true">[{{ .Ordinal }}]</span><span class="sidenote__content">{{ .Inner | .Page.RenderString (dict "display" "inline") }}</span></span>{{- /* trim trailing newline so punctuation stays tight */ -}}

@@ -1,0 +1,16 @@
+{{- /*
+  Further reading: a compact reference card.
+
+  Usage:
+    {{< further-reading >}}
+    - [OpenSSH manual](https://www.openssh.com/manual.html)
+    - [ssh-keygen manual](https://man.openbsd.org/ssh-keygen)
+    {{< /further-reading >}}
+*/ -}}
+
+<aside class="further-reading">
+  <p class="further-reading__label">// Further reading</p>
+  <div class="further-reading__body">
+    {{ .Inner | .Page.RenderString }}
+  </div>
+</aside>

@@ -1,25 +1,30 @@
 {{ define "main" }}
-<!-- Article -->
-<article class="blog-post">
+{{- /* Reading progress bar (filled by /js/post.js). */ -}}
+<div class="reading-progress" aria-hidden="true">
+  <span class="reading-progress__bar" data-reading-progress></span>
+</div>
+
+<article class="blog-post{{ if .Params.dropcap }} has-dropcap{{ end }}">
   <div class="post-container">
-    <!-- Post Header -->
+
+    {{- /* --------------------------------------------------
+        Header
+    -------------------------------------------------- */ -}}
     <header class="post-header">
       <div class="post-breadcrumb">
         <a href="/">Blog</a>
         <span>/</span>
         {{ with index .Params.categories 0 }}
-          <span>{{ . }}</span>
+        <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a>
         {{ end }}
       </div>
 
-      <h1 class="post-heading">
-        {{ .Title }}
-      </h1>
+      <h1 class="post-heading">{{ .Title }}</h1>
 
       <div class="post-details">
         <div class="post-author">
           <div class="author-avatar">
-            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa-solid fa-memory"></i>
           </div>
           <div class="author-info">
             <span class="author-name">{{ .Site.Params.author }}</span>
@@ -36,28 +41,42 @@
             <i class="fa-solid fa-clock"></i>
             {{ .ReadingTime }} min read
           </span>
+          {{ if ne .Lastmod .Date }}
+          <span class="info-item">
+            <i class="fa-solid fa-rotate"></i>
+            Updated {{ .Lastmod.Format "Jan 2, 2006" }}
+          </span>
+          {{ end }}
           {{ with index .Params.categories 0 }}
-            <span class="info-item">
-              <i class="fa-solid fa-tag"></i>
-              {{ . }}
-            </span>
+          <span class="info-item">
+            <i class="fa-solid fa-folder"></i>
+            {{ . }}
+          </span>
           {{ end }}
         </div>
       </div>
 
       <div class="post-tags-header">
         {{ range .Params.tags }}
-          <span class="post-tag">#{{ . }}</span>
+        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" class="post-tag">#{{ . }}</a>
         {{ end }}
       </div>
     </header>
 
-    <!-- Post Content -->
+    {{- /* Sticky table of contents (hidden when a post has no headings). */ -}}
+    {{ partial "toc.html" . }}
+
+    {{- /* --------------------------------------------------
+        Article body
+    -------------------------------------------------- */ -}}
     <div class="post-body">
       {{ .Content }}
+      {{ partial "post-eof.html" . }}
     </div>
 
-    <!-- Post Footer -->
+    {{- /* --------------------------------------------------
+        Footer: share + author
+    -------------------------------------------------- */ -}}
     <footer class="post-footer">
       <div class="share-section">
         <h4>Share this article</h4>
@@ -79,7 +98,7 @@
 
       <div class="author-box">
         <div class="author-avatar-large">
-          <i class="fa-solid fa-user-secret"></i>
+          <i class="fa-solid fa-memory"></i>
         </div>
         <div class="author-details">
           <h4>Written by {{ .Site.Params.author }}</h4>
@@ -90,10 +109,15 @@
         </div>
       </div>
     </footer>
+
   </div>
 </article>
 
-<!-- Related Posts (AUTOMATIC!) -->
+<a href="#top" class="back-to-top" data-back-to-top aria-label="Back to top">↑</a>
+
+{{- /* --------------------------------------------------
+    Related posts
+-------------------------------------------------- */ -}}
 {{ $related := .Site.RegularPages.Related . | first 3 }}
 {{ if $related }}
 <section class="related-posts">

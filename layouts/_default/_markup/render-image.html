@@ -1,0 +1,25 @@
+{{- /*
+  Image renderer.
+
+  Markdown usage:
+
+    ![Alt text](/path/to/image.png "Optional caption")
+
+  The Markdown title becomes the visible caption. Images are lazy-loaded
+  by default; set loading="eager" manually if an image is above the fold.
+*/ -}}
+
+{{- $title := .Title -}}
+
+<figure class="post-figure">
+  <img
+    src="{{ .Destination | safeURL }}"
+    alt="{{ .PlainText }}"
+    loading="lazy"
+    decoding="async"
+    {{- with $title }} title="{{ . }}"{{ end }}>
+
+  {{- with $title }}
+  <figcaption class="post-figure__caption">{{ . }}</figcaption>
+  {{- end }}
+</figure>

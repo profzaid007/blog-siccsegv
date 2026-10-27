@@ -18,12 +18,14 @@
   <link rel="stylesheet" href="/css/style.css">
   {{ if eq .Section "posts" }}
   <link rel="stylesheet" href="/css/post-style.css">
+  <link rel="stylesheet" href="/css/chroma.css">
+  <script src="/js/post.js" defer></script>
   {{ end }}
   {{ if or .IsHome (eq .Kind "taxonomy") (eq .Kind "term") }}
   <link rel="stylesheet" href="/css/categories-style.css">
   {{ end }}
 </head>
-<body>
+<body id="top">
   {{ partial "header.html" . }}
   
   <main>

@@ -1,0 +1,33 @@
+{{- /*
+  Custom code block renderer.
+
+  Markdown usage:
+
+    ```bash {filename="~/.ssh/config", linenos=true, hl_lines=[3]}
+    Host example
+      HostName example.com
+    ```
+
+  Produces a framed block with a language badge, an optional filename,
+  a copy button, and Chroma syntax highlighting (classes live in
+  /css/chroma.css).
+*/ -}}
+
+{{- $lang := .Type | default "text" -}}
+{{- $options := .Options | default (dict) -}}
+{{- $options = merge $options (dict "noClasses" false) -}}
+{{- $highlighted := transform.Highlight .Inner $lang $options -}}
+
+<figure class="code-block" data-language="{{ $lang }}">
+  <figcaption class="code-block__header">
+    <span class="code-block__lang">{{ $lang }}</span>
+    {{- with .Attributes.filename }}
+    <span class="code-block__filename">{{ . }}</span>
+    {{- end }}
+    <button class="code-block__copy" type="button" data-copy>Copy</button>
+  </figcaption>
+
+  <div class="code-block__body">
+    {{- $highlighted -}}
+  </div>
+</figure>

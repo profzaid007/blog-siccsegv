@@ -1,0 +1,31 @@
+{{- /* Table of contents. Renders only when the page has H2/H3 headings. */ -}}
+
+{{- with .Fragments.Headings }}
+<details class="toc" open>
+  <summary class="toc__summary">// On this page</summary>
+
+  <nav class="toc__content" aria-label="Table of contents">
+    <ul class="toc__list">
+      {{- /* Hugo exposes a synthetic level-0 root; its children are the
+             real H2 headings. */ -}}
+      {{- range . }}
+        {{- range .Headings }}
+      <li class="toc__item">
+        <a class="toc__link" href="#{{ .ID }}">{{ .Title }}</a>
+
+        {{- with .Headings }}
+        <ul class="toc__sublist">
+          {{- range . }}
+          <li>
+            <a class="toc__link toc__link--sub" href="#{{ .ID }}">{{ .Title }}</a>
+          </li>
+          {{- end }}
+        </ul>
+        {{- end }}
+      </li>
+        {{- end }}
+      {{- end }}
+    </ul>
+  </nav>
+</details>
+{{- end }}

@@ -1,0 +1,12 @@
+{{- /*
+  Pull quote: a verbatim line lifted from the article for emphasis.
+
+  Usage:
+    {{< pullquote >}}
+    The pursuit itself is intrinsically valuable.
+    {{< /pullquote >}}
+*/ -}}
+
+<aside class="pullquote">
+  {{ .Inner | .Page.RenderString }}
+</aside>

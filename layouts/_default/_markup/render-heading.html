@@ -1,0 +1,14 @@
+{{- /*
+  Heading renderer.
+
+  Adds a stable anchor link to every heading below H1. The anchor is
+  revealed on hover (and on keyboard focus) so it never competes with
+  the heading text while reading.
+*/ -}}
+
+<h{{ .Level }} id="{{ .Anchor }}" class="heading heading--h{{ .Level }}">
+  {{- .Text -}}
+  {{- if gt .Level 1 -}}
+  <a class="heading__anchor" href="#{{ .Anchor }}" aria-label="Link to this section">#</a>
+  {{- end -}}
+</h{{ .Level }}>

@@ -1,0 +1,23 @@
+{{- /*
+  Callout / admonition.
+
+  Usage:
+    {{< callout type="tip" title="Pro tip" >}}
+    Markdown content goes here.
+    {{< /callout >}}
+
+  Types: note | tip | warning | danger
+*/ -}}
+
+{{- $type := .Get "type" | default "note" -}}
+{{- $title := .Get "title" -}}
+
+<aside class="callout callout--{{ $type }}">
+  <p class="callout__label">
+    <span class="callout__badge">{{ $type }}</span>
+    {{- with $title }}<span class="callout__title">{{ . }}</span>{{ end }}
+  </p>
+  <div class="callout__body">
+    {{ .Inner | .Page.RenderString }}
+  </div>
+</aside>
