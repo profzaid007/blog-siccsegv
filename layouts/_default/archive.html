@@ -5,7 +5,7 @@
     <div class="hero-content">
       <div class="terminal-prompt">
         <span class="prompt-symbol">$</span>
-        <span class="prompt-text">cd /blog/archive && ls -la</span>
+        <span class="prompt-text">cd /blog/archive && tree --posts</span>
       </div>
       <h1 class="hero-title">Post Archive<span class="cursor">_</span></h1>
       <p class="hero-subtitle">
@@ -18,12 +18,24 @@
 <!-- Archive Timeline -->
 <section class="archive-timeline-section">
   <div class="container">
-<pre class="archive-timeline">
-{{- $posts := where .Site.RegularPages "Section" "posts" -}}
-{{- $yearGroups := $posts.GroupByDate "2006" -}}
+    {{- $posts := where .Site.RegularPages "Section" "posts" -}}
+    {{- $yearGroups := $posts.GroupByDate "2006" -}}
+
+    <div class="archive-panel">
+      <div class="archive-panel__header">
+        <div class="terminal-buttons" aria-hidden="true">
+          <span class="btn-close"></span>
+          <span class="btn-minimize"></span>
+          <span class="btn-maximize"></span>
+        </div>
+        <span class="archive-panel__title">~/blog/archive $ tree --posts</span>
+        <span class="archive-panel__count">{{ len $posts }} posts</span>
+      </div>
+
+      <pre class="archive-timeline">
 {{- $yearCount := len $yearGroups -}}
 {{- range $yearIndex, $year := $yearGroups }}
-<span class="timeline-year">{{ $year.Key }}</span>
+<span class="timeline-year">{{ $year.Key }}</span> <span class="timeline-count">({{ len $year.Pages }} post{{- if ne (len $year.Pages) 1 }}s{{- end }})</span>
  │
 {{- $months := $year.Pages.GroupByDate "January" -}}
 {{- $monthCount := len $months -}}
@@ -50,7 +62,43 @@
 
 {{- end }}
 {{- end }}
-</pre>
+      </pre>
+
+      <div class="archive-panel__footer">
+        <span><span class="timeline-month">●</span> month</span>
+        <span>├─ post</span>
+        <span>{{ len $yearGroups }} years</span>
+      </div>
+    </div>
+
+    <div class="archive-mobile">
+      <p class="archive-mobile__label">// archive · {{ len $posts }} posts</p>
+
+      {{ range $yearGroups }}
+      <section class="archive-mobile__year">
+        <h2>
+          {{ .Key }}
+          <span>{{ len .Pages }} post{{ if ne (len .Pages) 1 }}s{{ end }}</span>
+        </h2>
+
+        {{ range .Pages.GroupByDate "January" }}
+        <div class="archive-mobile__month">
+          <h3>{{ .Key }}</h3>
+          <ul>
+            {{ range .Pages }}
+            <li>
+              <a href="{{ .Permalink }}">
+                <span>{{ .Date.Format "Jan 02" }}</span>
+                {{ .Title }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      </section>
+      {{ end }}
+    </div>
   </div>
 </section>
 
@@ -60,7 +108,7 @@
     <div class="section-header">
       <h2 class="section-title">All Posts<span class="cursor">_</span></h2>
     </div>
-    
+
     <div class="posts-grid">
       {{ range $posts }}
         {{ partial "post-card.html" . }}

@@ -1,14 +1,19 @@
-<footer class="footer">
+<footer class="footer" id="site-footer">
   <div class="container">
-    <pre class="footer-ascii">
+    <div class="footer-brand">
+      <p class="footer-brand__label">// Siccsegv</p>
+
+      <pre class="footer-ascii" aria-hidden="true">
  ____ ___ ____ ____ ____  _____ ______     __
 / ___|_ _/ ___/ ___/ ___|| ____/ ___\ \   / /
 \___ \| | |  | |   \___ \|  _|| |  _ \ \ / /
  ___) | | |__| |___ ___) | |__| |_| | \ V /
 |____/___\____\____|____/|_____\____|  \_/
+      </pre>
 
-      Technical Insights & Security Research
-    </pre>
+      <p class="footer-brand__tagline">Technical Insights &amp; Security Research</p>
+    </div>
+
     <div class="footer-content">
       <div class="footer-col">
         <h4>Siccsegv Blog</h4>
@@ -45,8 +50,10 @@
         </div>
       </div>
     </div>
+
     <div class="footer-bottom">
-      <p>&copy; {{ now.Year }} Siccsegv. All rights retained.</p>
+      <p>&copy; {{ now.Year }} Siccsegv. All rights reserved.</p>
+      <p class="footer-bottom__meta">Built with Hugo · <a href="/index.xml">RSS</a></p>
     </div>
   </div>
 </footer>
