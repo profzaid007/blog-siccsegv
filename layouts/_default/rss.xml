@@ -4,7 +4,7 @@
     <title>{{ .Site.Title | html }}</title>
     <link>{{ .Site.BaseURL | html }}</link>
     <description>{{ .Site.Params.description | html }}</description>
-    <language>{{ .Site.LanguageCode | default "en-us" }}</language>
+    <language>{{ .Site.Language.Locale | default "en-us" }}</language>
     <atom:link href="{{ .Permalink | html }}" rel="self" type="application/rss+xml" />
     <generator>Hugo</generator>
 

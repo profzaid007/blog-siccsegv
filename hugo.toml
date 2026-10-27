@@ -1,5 +1,5 @@
 baseURL = 'https://blog.siccsegv.com/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Siccsegv Blog'
 
 [params]
@@ -31,8 +31,26 @@ title = 'Siccsegv Blog'
 
 [markup]
   [markup.goldmark]
+    # Existing posts use raw HTML in a few places.
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      # Enables {.class} attributes on block elements.
+      [markup.goldmark.parser.attribute]
+        block = true
+  # Emit Chroma classes; colours live in static/css/chroma.css.
+  [markup.highlight]
+    noClasses = false
+    lineNos = false
+    lineNumbersInTable = true
+    codeFences = true
+    guessSyntax = false
+  # Levels shown by layouts/partials/toc.html.
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
 
 [outputs]
   home = ["HTML", "RSS"]
