@@ -5,8 +5,13 @@ description: "An essay on the potential merits of Linux"
 categories: ["Linux"]
 tags: ["linux", "operating-system", "philosophy", "open-source"]
 keywords: ["linux", "operating system", "open source", "windows alternative"]
+dropcap: true
 draft: false
 ---
+
+{{< audience >}}
+People who use computers every day but have never been given a reason to look under the hood.
+{{< /audience >}}
 
 ## A Dismal State of Affairs 
 
@@ -39,5 +44,9 @@ At the very outset, Linux might seem superior to Windows due to its architectura
 In my opinion, the most rewarding part of using Linux is not related to its technical superiority. All of the aforementioned advantages that Linux offers clearly improves user experience in substantial ways but the actual benefits of using it lies in its approach and philosophy towards computing. I had mentioned that how indifferent people were towards technology always surprised me because it essentially amounted to being indifferent to a significant part of one's own life. 
 
 The philosophy of Linux views this indifference as detrimental and perhaps even down right decadent because it divorces the user from a machine he increasingly relies on for his daily functioning. This does not mean that Linux comes with an inscrutable interface that you will have to spend years learning in order to use it properly. Many Linux distributions come with a GUI that is quite intuitive but it still affords the possibility of dwelling deeper into the system. Linux at its very heart is a kind of system that engenders exploration and curiosity about itself and this difference is what sets it miles apart from Windows. Such an attitude and respect it holds for its users also partly eliminates the possibility of capitalizing on the ignorance towards a particular system. Users can either rest content with what they are presented by the interface or dive deeper, trying to understand how all of the intricate components come together as one seamless visual experience he beholds everyday. I think Linux makes evident the kind of sheer wizardry that is involved in making computers work and transforms any menial task you might do on a regular basis as an adventure of its own. 
+
+{{< pullquote >}}
+The actual benefits of using it lies in its approach and philosophy towards computing.
+{{< /pullquote >}}
 
 So for both technical and non technical users alike, Linux seems like an extremely intriguing choice for the reasons considered. Given the fact that a user overcomes his reluctance to entirely switch to a different operating system on the whim that the grass might be greener on the other side, I believe he would be rarely disappointed because it is.

@@ -19,4 +19,8 @@ especially when I am passionate about it. It is always rewarding to assist a per
 
 Now that we've discussed cybersecurity briefly, most people believe it to be a method of learning how to hack, which they may then utilise for themselves for any reason they choose. This is a terrible and depressing notion. Many people have contacted me asking that I teach hacking. When I question them, "Why do you want to learn?" they give me general comments while acknowledging that they would use it for malicious intent. Most of them asked, "Can you show me how to hack a Facebook account?" This style of thinking is the worst approach to entering the cybersecurity field. Hacking isa creative problem-solving technique, and those who engage in it are known as hackers. It is not done to breach the  law or do harm to others, which is what crackers do.
 
+{{< pullquote >}}
+Hacking is a creative problem-solving technique, and those who engage in it are known as hackers.
+{{< /pullquote >}}
+
 To sum up, entering this profession is simple, but maintaining the required pace is exceptionally challenging and can only be achieved with enormous enthusiasm and enjoyment for what you do. Let's say you are interested in cybersecurityfor reasons other than those I've suggested. It will be depleting and harmful to you and the people around you becausethat is how cybersecurity works. With that, it is up to you to decide if it is a route that everyone can take.

@@ -19,6 +19,17 @@ Symmetric-key cryptography involves the use of the same key to both encrypt and 
 
 Public-key cryptography, on the other hand, involves the use of a public key to encrypt the message and a private key to decrypt it. The public keyis available to anyone, but the private key is only known to the owner. This means that anyone can send an encrypted message to the owner, but onlythe owner has the private key needed to decrypt the message. One advantage of public-key cryptography is that it allows for secure communication without the need to exchange a shared key.
 
+| Property | Symmetric-key | Public-key |
+|---|---|---|
+| Keys | One shared key | A public/private key pair |
+| Key exchange | Both sides must share the key safely | The public key can be published |
+| Main risk | Losing or leaking the shared key | Exposing the private key |
+| Typical use | Bulk data encryption | Key exchange and signatures |
+
+{{< callout type="warning" title="Key distribution is the hard part" >}}
+Symmetric encryption is only as safe as the channel used to share its key. Public-key cryptography exists largely to solve that exchange problem.
+{{< /callout >}}
+
 Cryptography is used in a variety of applications in cybersecurity, including:
 
 - Encrypting communications: Cryptography is used to secure communication channels, such as email and messaging apps, to ensure that only the intended recipient can read the message.
@@ -28,3 +39,8 @@ Cryptography is used in a variety of applications in cybersecurity, including:
 - Securely storing passwords: Cryptographic hashing algorithms are used to store passwords in a secure manner, making it difficult for attackers to obtain the plaintext password even if they gain access to the hashed version.
 
 There are many tools and techniques available for implementing cryptography, and choosing the right one depends on the specific needs of the application. Some common cryptographic algorithms and protocols include AES, RSA, and SSL/TLS.
+
+{{< further-reading >}}
+- [Crypto101 — a free introductory book](https://www.crypto101.io/)
+- [NIST cryptographic standards and guidelines](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
+{{< /further-reading >}}

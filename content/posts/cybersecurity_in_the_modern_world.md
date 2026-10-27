@@ -5,6 +5,7 @@ description: "An understanding of the place for cybersecurity in today's world"
 categories: ["Cybersecurity"]
 tags: ["cybersecurity", "data-breach", "statistics", "security"]
 keywords: ["cybersecurity", "data security", "cyber threats", "modern security"]
+dropcap: true
 draft: false
 ---
 
@@ -16,6 +17,10 @@ The world is awash in the sea of data. Sources and types of data are increasing 
 ## Why is cybersecurity critical?
 
 According to the Allianz Risk Barometer, cyber perils are the biggest concern for companies globally in 2022. Asia-Pacific companies receive 6 cyber threats every minute, according to Cisco. A Frost & Sullivan study commissioned by Microsoft revealed that the potential economic loss across the Asia Pacific due to cybersecurity incidents could hit a staggering $1.745 trillion (USD). 
+
+{{< callout type="note" title="Data vintage" >}}
+The statistics below date from 2020–2022 reporting. Treat them as directional rather than current.
+{{< /callout >}}
 
 ## Statistics 
 
@@ -29,12 +34,14 @@ The top malicious email attachment types are .doc and .dot, which make up 37%; t
 
 An estimated 300 billion passwords are used by humans and machines worldwide. (Cybersecurity Media). These numbers are only growing by the day with new technologies like 5G emerging, unawareness of the rising threats, the massive rush to cloud computing, the move formwork to home networks, high profile IoT(Internet Of Things) hacks, the widespread use of social media, etc. Unpatched system and architecture weaknesses are much more susceptible to attacks as vulnerabilities are much easier to identify.
 
+{{< callout type="warning" title="Reported figures undercount the problem" >}}
 Cybercrimes are vastly undercounted because they aren't reported — due to embarrassment, fear of reputational harm, and the notion that law enforcement can't help (amongst other reasons). Some companies are forced to pay large amounts of ransom money to the hacker(s) to keep the "hack" out of the public eye. The demand for cybersecurity professionals, therefore, increases exponentially.
+{{< /callout >}}
 
 
 
-## References: 
-
-- https://assets.vistex.com/wp-content/uploads/2021/08/30124718/manufacturing-cybersecurity.pdf
-- https://cybersecurityventures.com/cybersecurity-almanac-2022/
-- https://www.nbcnews.com/tech/security/ransomware-attack-hit-teamsters-2019-they-refused-pay-n1270461
+{{< further-reading >}}
+- [Manufacturing cybersecurity report (PDF)](https://assets.vistex.com/wp-content/uploads/2021/08/30124718/manufacturing-cybersecurity.pdf)
+- [Cybersecurity Almanac 2022](https://cybersecurityventures.com/cybersecurity-almanac-2022/)
+- [NBC News: Teamsters ransomware attack](https://www.nbcnews.com/tech/security/ransomware-attack-hit-teamsters-2019-they-refused-pay-n1270461)
+{{< /further-reading >}}

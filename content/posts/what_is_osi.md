@@ -10,6 +10,10 @@ draft: false
 
 The OSI model can be defined as a theoretical blueprint that defines how computers communicate with their respective protocols on a network. Thoughthis model is used comparatively less in the practical world, it has its own benefits. This seven-layered model is often used to troubleshoot. The OSI model, with each layer dissecting the network communications systems, helps individuals and major companies trace the source of the problem and troubleshoot it.
 
+{{< callout type="note" title="A reference model, not a protocol stack" >}}
+The OSI model is a teaching and troubleshooting framework. Real networks usually follow the TCP/IP model, but the layers still map cleanly enough to reason about problems.
+{{< /callout >}}
+
 The OSI model has the respective seven abstract layers:
 
 Typically, every time a data packet is sent from a terminal, it climbs up all the seven OSI stack layers and climbs them down again on the end users' side. And depending on what type of packet is being sent, their respective protocol is used.
@@ -34,3 +38,8 @@ Mention how the mac address is assigned through NICs. This layer holds the proto
 
 ## 1. Physical layer
 Physical equipment like wires come under this layer. Data is converted to raw bit streams; these are received and transmitted in this layer.
+
+{{< further-reading >}}
+- [Cloudflare: What is the OSI model?](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/)
+- [RFC 1122: Requirements for Internet Hosts](https://www.rfc-editor.org/rfc/rfc1122)
+{{< /further-reading >}}

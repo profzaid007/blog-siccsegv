@@ -18,4 +18,14 @@ Such a chain of events, although seemingly innocuous, has paved way for an inter
 
 In order to provide a place for users disgruntled by their experience with the modern web, project Gemini took form. The project essentially hoped to create a protocol that valued the privacy and autonomy of users. Bereft of technologies like javascript that contributes to much of the bloat in modern web applications, Gemini took inspiration from the design of the gopher protocol by emphasizing on the sharing of text documents. However, it also introduced new features like "gemtext" modelled after markdown that allowed for a clean formatting of gemini pages, often called capsules. Unlike normal websites, creating a gemini capsule is quite easy with gemtext because there's very little to learn. A lot of tilde communities offer shell accounts with a gemini capsule. 
 
+{{< pullquote >}}
+The modern web is a seething mass of disparate, useless and fundamentally misleading information designed mostly for the purpose of hoarding your attention.
+{{< /pullquote >}}
+
 Just like how you need a browser to access the web, accessing "geminispace" requires a dedicated gemini client. For Linux, amfora is a popular terminal client. Lagrange is a cross platform gemini client that supports Windows, Mac OS, Linux and even mobile platforms like Android and IOS. I think browsing geminispace through these clients is bound to instill a sense of refreshment in anyone who remembers or yearns for an internet that is truly free and open.
+
+{{< further-reading >}}
+- [Project Gemini protocol specification](https://geminiprotocol.net/docs/protocol-specification.gmi)
+- [Amfora terminal client](https://github.com/makeworld-the-better-one/amfora)
+- [Lagrange desktop client](https://gmi.skyjake.fi/lagrange/)
+{{< /further-reading >}}

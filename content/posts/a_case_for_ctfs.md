@@ -5,8 +5,13 @@ description: "Are computers simply a long list of ones and zeros?"
 categories: ["UNIX Philosophy"]
 tags: ["ctf", "learning", "linux", "command-line"]
 keywords: ["CTF", "capture the flag", "learning", "programming challenges"]
+dropcap: true
 draft: false
 ---
+
+{{< epigraph author="Robert A. Heinlein" source="Time Enough for Love" >}}
+A human being should be able to change a diaper, plan an invasion, butcher a hog, conn a ship, design a building, write a sonnet, balance accounts, build a wall, set a bone, comfort the dying, take orders, give orders, cooperate, act alone, solve equations, analyze a new problem, pitch manure, program a computer, cook a tasty meal, fight efficiently, die gallantly. Specialization is for insects.
+{{< /epigraph >}}
 
 During my initial forays in trying to acquaint myself with Linux, I was highly disenchanted by the fact that the users who had Linux as their primary operating system predominantly relied on the command line to navigate their machine and to perform general operations for which I had heretofore only used the GUI ( Graphical User Interface ). I felt that this Operating System was only reserved for those with the utmost technical expertise in computing and remained far from reach to a plebian like myself, who perceived the notion of interacting with machines through commands in utter perplexity. Isn't it needlessly laborious to type a long string of commands to perform tasks as trivial as moving files or changing directories (called folders in Windows)? The benefits of this seemingly archaic mode of interaction weren't apparent to me at first sight, but perhaps I was too new to this frontier to arrive at an unprejudiced conclusion.
 
@@ -18,5 +23,9 @@ When I first discovered such elaborate intellectual puzzles contrived for nothin
 
 
 The qualities generally cultivated in contemporary institutions are obedience and the capacity to effectively understand and implement what is being told. In the process of this conditioning, intelligence coupled with subservience to authority becomes the most desirable trait for an ideal working man. As knowledge becomes too specialized, the general delight in questioning and solving problems of personal concern is abandoned at the behest of an abstract entity upon which we confer our responsibility to learn and to grow. We forsake the capacity to seek out our own questions and settle for those which are handed down to us regardless of how dreary they might appear.
+
+{{< pullquote >}}
+Instead of solutions being the only purpose of learning, one comes to regard the pursuit itself to be intrinsically valuable.
+{{< /pullquote >}}
 
 CTFs, I think, are quite salutary in this regard because they helped me realize that there were questions in this world that are worthy of solvingnot for academic validation or for the gratification of being intellectually superior to your fellow peers but for the sheer pleasure of expanding the frontiers of human understanding. In addition to the technical knowledge one might accrue in solving CTFs, the unspeakable joy of comprehending what was formerly inexplicable renders the need to derive motivation from an external recourse to be entirely superfluous. Instead of solutions being the only purpose of learning, one comes to regard the pursuit itself to be intrinsically valuable because, in his attempt to demystify the unknown, he finds himself engaged in the most primordial of human ventures. And the fact that we can discover such veritable truths through programs consisting of long strings of 1s and 0s perhaps indicates that computers might not be as mechanical as they may seem.
