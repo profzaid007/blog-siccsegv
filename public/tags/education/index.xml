@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Siccsegv Blog</title>
-    <link>https://blog.siccsegv.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Insights into technology, cybersecurity, philosophy and all that lies in between</description>
     <language>en-us</language>
-    <atom:link href="https://blog.siccsegv.com/tags/education/" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/education/" rel="self" type="application/rss+xml" />
     <generator>Hugo</generator>
 
     
     <item>
       <title>The AI Hype</title>
-      <link>https://blog.siccsegv.com/posts/ai_hype/</link>
-      <guid>https://blog.siccsegv.com/posts/ai_hype/</guid>
+      <link>http://localhost:1313/posts/ai_hype/</link>
+      <guid>http://localhost:1313/posts/ai_hype/</guid>
       <pubDate>Wed, 18 Mar 2026 17:30:54 IST</pubDate>
       <description>&lt;aside class=&#34;audience&#34;&gt;
   &lt;p class=&#34;audience__label&#34;&gt;Assumed audience&lt;/p&gt;
@@ -36,7 +36,7 @@
   &lt;div class=&#34;further-reading__body&#34;&gt;
     &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.cryptonomicon.com/beginning.html&#34;&gt;In the Beginning&amp;hellip; Was the Command Line — Neal Stephenson&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.siccsegv.com/posts/why_use_linux/&#34;&gt;Why Use Linux? — a companion essay on this blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/posts/why_use_linux/&#34;&gt;Why Use Linux? — a companion essay on this blog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
   &lt;/div&gt;
@@ -47,8 +47,8 @@
     
     <item>
       <title>A Case for CTFs</title>
-      <link>https://blog.siccsegv.com/posts/a_case_for_ctfs/</link>
-      <guid>https://blog.siccsegv.com/posts/a_case_for_ctfs/</guid>
+      <link>http://localhost:1313/posts/a_case_for_ctfs/</link>
+      <guid>http://localhost:1313/posts/a_case_for_ctfs/</guid>
       <pubDate>Thu, 13 Mar 2025 00:00:00 UTC</pubDate>
       <description>&lt;figure class=&#34;epigraph&#34;&gt;
   &lt;blockquote class=&#34;epigraph__quote&#34;&gt;
@@ -73,8 +73,8 @@
     
     <item>
       <title>Is a career in cybersecurity open to everyone?</title>
-      <link>https://blog.siccsegv.com/posts/career_in_cybersecurity/</link>
-      <guid>https://blog.siccsegv.com/posts/career_in_cybersecurity/</guid>
+      <link>http://localhost:1313/posts/career_in_cybersecurity/</link>
+      <guid>http://localhost:1313/posts/career_in_cybersecurity/</guid>
       <pubDate>Mon, 10 Mar 2025 00:00:00 UTC</pubDate>
       <description>&lt;p&gt;Making cybersecurity a job has been more popular in recent years. As a cybersecurity practitioner, I am interested in sharing my practical knowledge of the industry and the challenges one must be prepared for when choosing cybersecurity.&lt;/p&gt;
 &lt;p&gt;Why you want to work in cybersecurity is the most crucial factor to consider while choosing a career route. I want to explain why. When I was younger, I was naturally curious and eager to utilise computers and discover new things. When I first  gained access to a desktop, there was little internet availability. I would frequently engage in CD-ROM gaming or  investigate the vast aspects of the operating system. I soon found various openings to take advantage of.&lt;/p&gt;
@@ -92,8 +92,8 @@ especially when I am passionate about it. It is always rewarding to assist a per
     
     <item>
       <title>Cybersecurity in the Modern World</title>
-      <link>https://blog.siccsegv.com/posts/cybersecurity_in_the_modern_world/</link>
-      <guid>https://blog.siccsegv.com/posts/cybersecurity_in_the_modern_world/</guid>
+      <link>http://localhost:1313/posts/cybersecurity_in_the_modern_world/</link>
+      <guid>http://localhost:1313/posts/cybersecurity_in_the_modern_world/</guid>
       <pubDate>Sat, 08 Mar 2025 00:00:00 UTC</pubDate>
       <description>&lt;h2 id=&#34;intro&#34; class=&#34;heading heading--h2&#34;&gt;Intro&lt;a class=&#34;heading__anchor&#34; href=&#34;#intro&#34; aria-label=&#34;Link to this section&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The world is awash in the sea of data. Sources and types of data are increasing rapidly, driven by the ubiquitous use of computing in science, commerce, engineering and even the humanities. Protecting crucial data, now more than ever, is an omnipresent concern for top companies across all industries (banking/finance, tech, government/military, entertainment, healthcare), with privacy slowly becoming an unattainable privilege.&lt;/p&gt;
@@ -144,8 +144,8 @@ The top malicious email attachment types are .doc and .dot, which make up 37%; t
     
     <item>
       <title>Gemini: A Refuge from the Bloat of the Modern Web</title>
-      <link>https://blog.siccsegv.com/posts/introduction_to_gemini/</link>
-      <guid>https://blog.siccsegv.com/posts/introduction_to_gemini/</guid>
+      <link>http://localhost:1313/posts/introduction_to_gemini/</link>
+      <guid>http://localhost:1313/posts/introduction_to_gemini/</guid>
       <pubDate>Wed, 05 Mar 2025 00:00:00 UTC</pubDate>
       <description>&lt;p&gt;Gemini, in its most technical sense, can be described as an internet protocol which serves files through a lightweight hypertext format. It was designed to replace its more antiquated predecessor the &amp;ldquo;gopher protocol&amp;rdquo; that worked on similar mechanisms. To elaborate on these technologies in less technical terms, they were both designed simply for the sharing and linking of textfiles that were interconnected and served as precursor to the modern web.&lt;/p&gt;
 &lt;p&gt;Although Gemini is a fairly recent innovation, gopher has existed for a long time but was eventually deserted because the protocol was not designed for most of the complicated tasks that current websites require for its functioning. Displaying embedded images and videos or creating an elaborate presentation for you work was not entirely feasible in a protocol that was simply designed to share textfiles. One could also share videos and other kinds of files through gopher but a framework for presenting an elaborate visual interface that most users found appealing was, however, non-existent.&lt;/p&gt;
@@ -174,8 +174,8 @@ The top malicious email attachment types are .doc and .dot, which make up 37%; t
     
     <item>
       <title>An Introduction to SSH</title>
-      <link>https://blog.siccsegv.com/posts/introduction_to_ssh/</link>
-      <guid>https://blog.siccsegv.com/posts/introduction_to_ssh/</guid>
+      <link>http://localhost:1313/posts/introduction_to_ssh/</link>
+      <guid>http://localhost:1313/posts/introduction_to_ssh/</guid>
       <pubDate>Sat, 01 Mar 2025 00:00:00 UTC</pubDate>
       <description>&lt;aside class=&#34;audience&#34;&gt;
   &lt;p class=&#34;audience__label&#34;&gt;Assumed audience&lt;/p&gt;
@@ -332,8 +332,8 @@ You would most likely see an output quite similar to this:&lt;/p&gt;
     
     <item>
       <title>Should You Use the Command Line?</title>
-      <link>https://blog.siccsegv.com/posts/should_you_use_the_commandline/</link>
-      <guid>https://blog.siccsegv.com/posts/should_you_use_the_commandline/</guid>
+      <link>http://localhost:1313/posts/should_you_use_the_commandline/</link>
+      <guid>http://localhost:1313/posts/should_you_use_the_commandline/</guid>
       <pubDate>Fri, 28 Feb 2025 00:00:00 UTC</pubDate>
       <description>&lt;figure class=&#34;epigraph&#34;&gt;
   &lt;blockquote class=&#34;epigraph__quote&#34;&gt;
@@ -360,8 +360,8 @@ You would most likely see an output quite similar to this:&lt;/p&gt;
     
     <item>
       <title>Why Use Linux?</title>
-      <link>https://blog.siccsegv.com/posts/why_use_linux/</link>
-      <guid>https://blog.siccsegv.com/posts/why_use_linux/</guid>
+      <link>http://localhost:1313/posts/why_use_linux/</link>
+      <guid>http://localhost:1313/posts/why_use_linux/</guid>
       <pubDate>Tue, 25 Feb 2025 00:00:00 UTC</pubDate>
       <description>&lt;aside class=&#34;audience&#34;&gt;
   &lt;p class=&#34;audience__label&#34;&gt;Assumed audience&lt;/p&gt;
@@ -396,8 +396,8 @@ You would most likely see an output quite similar to this:&lt;/p&gt;
     
     <item>
       <title>The Lost Operating System</title>
-      <link>https://blog.siccsegv.com/posts/the_lost_operating_system/</link>
-      <guid>https://blog.siccsegv.com/posts/the_lost_operating_system/</guid>
+      <link>http://localhost:1313/posts/the_lost_operating_system/</link>
+      <guid>http://localhost:1313/posts/the_lost_operating_system/</guid>
       <pubDate>Thu, 20 Feb 2025 00:00:00 UTC</pubDate>
       <description>&lt;p&gt;In recent times, almost everyone when asked what operating system they use or are familiar with, their answer is simply Windows. The wide use of this operating system is due to the fact that it is easy to use, in other words &amp;ldquo;User Friendly&amp;rdquo;. However, there are a lot of misconsceptions in the
 understanding of how this operating system works. I will give you a brief explaination on what it actually is and what people often assume it to be.&lt;/p&gt;
@@ -418,8 +418,8 @@ typing on the keyboard or using the mouse, in order for the hardware in the devi
     
     <item>
       <title>What is Cryptography?</title>
-      <link>https://blog.siccsegv.com/posts/what_is_cryptography/</link>
-      <guid>https://blog.siccsegv.com/posts/what_is_cryptography/</guid>
+      <link>http://localhost:1313/posts/what_is_cryptography/</link>
+      <guid>http://localhost:1313/posts/what_is_cryptography/</guid>
       <pubDate>Sat, 15 Feb 2025 00:00:00 UTC</pubDate>
       <description>&lt;p&gt;Cryptography is the practice of secure communication through the use of codes. It involves converting plaintext (readable) messages into ciphertext(unreadable) messages and back again, using mathematical algorithms called cryptographic protocols. Cryptography is a fundamental aspect of cybersecurity and is used to protect sensitive information from being accessed by unauthorized parties.&lt;/p&gt;
 &lt;p&gt;There are two main types of cryptographic techniques:&lt;/p&gt;
@@ -498,8 +498,8 @@ typing on the keyboard or using the mouse, in order for the hardware in the devi
     
     <item>
       <title>Introduction to Web Applications</title>
-      <link>https://blog.siccsegv.com/posts/introduction_to_webapp/</link>
-      <guid>https://blog.siccsegv.com/posts/introduction_to_webapp/</guid>
+      <link>http://localhost:1313/posts/introduction_to_webapp/</link>
+      <guid>http://localhost:1313/posts/introduction_to_webapp/</guid>
       <pubDate>Mon, 10 Feb 2025 00:00:00 UTC</pubDate>
       <description>&lt;p&gt;Web applications are software programs accessed through a web browser over the internet. They have become increasingly popular in recent years due to their convenience,  accessibility, and ease of updating and maintaining.&lt;/p&gt;
 &lt;p&gt;One of the main advantages of web applications is their accessibility.  Because they are accessed through a web browser, we can use them on any device with an internet connection, including computers, smartphones, and tablets. This allows users to access the application from any location, making it easy to stay connected and productive on the go.&lt;/p&gt;
@@ -551,8 +551,8 @@ typing on the keyboard or using the mouse, in order for the hardware in the devi
     
     <item>
       <title>What is the OSI Model?</title>
-      <link>https://blog.siccsegv.com/posts/what_is_osi/</link>
-      <guid>https://blog.siccsegv.com/posts/what_is_osi/</guid>
+      <link>http://localhost:1313/posts/what_is_osi/</link>
+      <guid>http://localhost:1313/posts/what_is_osi/</guid>
       <pubDate>Sun, 05 Jan 2025 00:00:00 UTC</pubDate>
       <description>&lt;p&gt;The OSI model can be defined as a theoretical blueprint that defines how computers communicate with their respective protocols on a network. Thoughthis model is used comparatively less in the practical world, it has its own benefits. This seven-layered model is often used to troubleshoot. The OSI model, with each layer dissecting the network communications systems, helps individuals and major companies trace the source of the problem and troubleshoot it.&lt;/p&gt;
 &lt;aside class=&#34;callout callout--note&#34;&gt;

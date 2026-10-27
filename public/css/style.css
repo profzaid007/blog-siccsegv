@@ -66,6 +66,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================================
+   Page Transitions
+   ============================================================ */
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: 180ms ease both page-fade-out;
+}
+
+::view-transition-new(root) {
+  animation: 240ms ease both page-fade-in;
+}
+
+@keyframes page-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* ============================================================
    Header
    ============================================================ */
 
@@ -805,7 +833,7 @@ section {
   .nav { display: none; }
   .nav-label { display: block; }
 
-  .nav-mobile.open {
+  .nav-mobile {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -817,6 +845,17 @@ section {
     border-radius: 6px;
     padding: 0.5rem 0;
     z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 180ms ease, transform 180ms ease, visibility 0s linear 180ms;
+  }
+
+  .nav-mobile.open {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: opacity 180ms ease, transform 180ms ease, visibility 0s;
   }
 
   .nav-mobile a {
@@ -1495,5 +1534,10 @@ section {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
   }
 }
