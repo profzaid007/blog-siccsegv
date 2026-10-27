@@ -20,36 +20,26 @@
      
     <!-- Main Categories -->
     <div class="categories-grid">
+      {{- $categoryIcons := dict
+        "UNIX Philosophy" (dict "modifier" "unix" "icon" "fa-solid fa-cubes")
+        "Cybersecurity" (dict "modifier" "cyber" "icon" "fa-solid fa-shield-virus")
+        "Smol Web" (dict "modifier" "smolweb" "icon" "fa-solid fa-feather")
+        "Linux" (dict "modifier" "linux" "icon" "fa-brands fa-linux")
+        "Programming" (dict "modifier" "programming" "icon" "fa-solid fa-code")
+      -}}
       {{ range .Data.Terms.Alphabetical }}
         {{ $category := .Page }}
         {{ $posts := .Pages }}
         {{ $latestPost := (index $posts 0) }}
+        {{ $meta := index $categoryIcons $category.Title | default (dict "modifier" "default" "icon" "fa-solid fa-folder-open") }}
         
         <!-- Determine if this is the featured category (first one or UNIX Philosophy) -->
         {{ $isFeatured := eq $category.Title "UNIX Philosophy" }}
         
         <article class="category-card{{ if $isFeatured }} featured{{ end }}">
           <div class="category-header">
-            <div class="category-icon 
-              {{- if eq $category.Title "UNIX Philosophy" }}unix
-              {{- else if eq $category.Title "Cybersecurity" }}cyber
-              {{- else if eq $category.Title "Smol Web" }}smolweb
-              {{- else if eq $category.Title "Linux" }}linux
-              {{- else if eq $category.Title "Programming" }}programming
-              {{- end }}">
-              {{- if eq $category.Title "UNIX Philosophy" }}
-                <i class="fa-solid fa-terminal"></i>
-              {{- else if eq $category.Title "Cybersecurity" }}
-                <i class="fa-solid fa-shield-halved"></i>
-              {{- else if eq $category.Title "Smol Web" }}
-                <i class="fa-solid fa-globe"></i>
-              {{- else if eq $category.Title "Linux" }}
-                <i class="fa-brands fa-linux"></i>
-              {{- else if eq $category.Title "Programming" }}
-                <i class="fa-solid fa-code"></i>
-              {{- else }}
-                <i class="fa-solid fa-folder-open"></i>
-              {{- end }}
+            <div class="category-icon category-icon--{{ index $meta "modifier" }}">
+              <i class="{{ index $meta "icon" }}"></i>
             </div>
             <div class="category-meta">
               <h2 class="category-title">
@@ -110,7 +100,7 @@
     </div>
      
     <!-- Terminal Stats -->
-    <div class="categories-stats">
+    <div class="categories-stats" id="stats">
       <div class="terminal-box">
         <div class="terminal-header">
           <div class="terminal-buttons">
@@ -121,25 +111,39 @@
           <span class="terminal-title">~/blog/stats $</span>
         </div>
         <div class="terminal-body">
-<pre class="stats-output">
-$ cat categories.stats
+          <div class="stats-terminal">
+            <p class="stats-command"><span class="prompt">$</span> cat categories.stats</p>
 
-+-----------------------------------------------------+
-|                  CONTENT OVERVIEW                   |
-+-----------------------------------------------------+
-|  Total Categories:        {{ len .Data.Terms }}                         |
-|  Total Articles:          {{ len (where .Site.RegularPages "Section" "posts") }}                        |
-|  Most Active:             {{ with (index (sort .Data.Terms "Count" "desc") 0) }}{{ .Page.Title }} ({{ .Count }}){{ end }}         |
-|  Most Recent:             {{ with (index (first 1 (where .Site.RegularPages "Section" "posts")) 0) }}{{ .Title }}{{ end }}            |
-|                                                     |
-|  Publishing Frequency:    Variable                  |
-|  Average Read Time:       5-15 minutes              |
-|                                                     |
-|  [*] All content peer-reviewed by security experts  |
-+-----------------------------------------------------+
+            <div class="stats-table">
+              <div class="stats-row">
+                <span class="stats-key">Total Categories</span>
+                <span class="stats-value">{{ len .Data.Terms }}</span>
+              </div>
+              <div class="stats-row">
+                <span class="stats-key">Total Articles</span>
+                <span class="stats-value">{{ len (where .Site.RegularPages "Section" "posts") }}</span>
+              </div>
+              <div class="stats-row">
+                <span class="stats-key">Most Active</span>
+                <span class="stats-value">{{ with (index (sort .Data.Terms "Count" "desc") 0) }}{{ .Page.Title }} ({{ .Count }}){{ end }}</span>
+              </div>
+              <div class="stats-row">
+                <span class="stats-key">Most Recent</span>
+                <span class="stats-value">{{ with (index (first 1 (where .Site.RegularPages "Section" "posts")) 0) }}{{ .Title }}{{ end }}</span>
+              </div>
+              <div class="stats-row">
+                <span class="stats-key">Publishing Frequency</span>
+                <span class="stats-value">Variable</span>
+              </div>
+              <div class="stats-row">
+                <span class="stats-key">Average Read Time</span>
+                <span class="stats-value">5–15 minutes</span>
+              </div>
+            </div>
 
-$ <span class="cursor">_</span>
-</pre>
+            <p class="stats-note">[*] All content peer-reviewed by security experts</p>
+            <p class="stats-prompt"><span class="prompt">$</span> <span class="cursor">_</span></p>
+          </div>
         </div>
       </div>
     </div>
