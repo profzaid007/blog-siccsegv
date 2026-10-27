@@ -53,13 +53,13 @@
 }
 
 .category-icon {
-  width: 70px;
-  height: 70px;
-  border-radius: 12px;
+  width: 80px;
+  height: 80px;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 2.4rem;
   flex-shrink: 0;
   border: 2px solid;
   transition: all 0.3s;
@@ -70,58 +70,40 @@
 }
 
 /* Category Icon Colors */
-.category-icon.pentesting {
-  background: rgba(247, 159, 153, 0.1);
-  border-color: var(--orange);
-  color: var(--orange);
+.category-icon--cyber {
+  background: rgba(20, 195, 142, 0.1);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
-.category-icon.linux {
+.category-icon--linux {
   background: rgba(212, 255, 0, 0.1);
   border-color: var(--accent2);
   color: var(--accent2);
 }
 
-.category-icon.cloud {
+.category-icon--unix {
   background: rgba(137, 180, 250, 0.1);
   border-color: var(--blue);
   color: var(--blue);
 }
 
-.category-icon.python {
-  background: rgba(20, 195, 142, 0.1);
-  border-color: var(--accent);
-  color: var(--accent);
+.category-icon--programming {
+  background: rgba(247, 159, 153, 0.1);
+  border-color: var(--orange);
+  color: var(--orange);
 }
 
-.category-icon.ctf {
+.category-icon--smolweb {
   background: rgba(166, 227, 161, 0.1);
   border-color: var(--green);
   color: var(--green);
 }
 
-.category-icon.webdev {
-  background: rgba(247, 159, 153, 0.1);
-  border-color: var(--orange);
-  color: var(--orange);
-}
-
-.category-icon.bash {
-  background: rgba(20, 195, 142, 0.1);
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-.category-icon.network {
-  background: rgba(137, 180, 250, 0.1);
-  border-color: var(--blue);
-  color: var(--blue);
-}
-
-.category-icon.malware {
-  background: rgba(247, 159, 153, 0.1);
-  border-color: var(--orange);
-  color: var(--orange);
+.category-icon--default {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--border);
+  color: var(--muted);
 }
 
 .category-meta {
@@ -224,14 +206,54 @@
   margin-top: 4rem;
 }
 
-.stats-output {
+.stats-terminal {
   font-family: var(--font-mono);
   font-size: 0.85rem;
-  line-height: 1.6;
+}
+
+.stats-command {
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+.stats-table {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.stats-row:last-child {
+  border-bottom: 0;
+}
+
+.stats-key {
+  color: var(--muted);
+}
+
+.stats-value {
+  margin-left: auto;
   color: var(--fg);
-  margin: 0;
-  white-space: pre;
-  text-align: left;
+  text-align: right;
+}
+
+.stats-note {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.stats-prompt {
+  margin-top: 1rem;
+  color: var(--muted);
 }
 
 /* ============================================================
@@ -253,9 +275,9 @@
   }
 
   .category-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 1.75rem;
+    width: 64px;
+    height: 64px;
+    font-size: 1.9rem;
   }
 
   .category-footer {
@@ -263,7 +285,7 @@
     align-items: flex-start;
   }
 
-  .stats-output {
-    font-size: 0.7rem;
+  .stats-terminal {
+    font-size: 0.78rem;
   }
 }
