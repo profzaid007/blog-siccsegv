@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
   
   <meta name="keywords" content="web applications, browser, software, internet">
   
-  <link rel="canonical" href="https://blog.siccsegv.com/posts/introduction_to_webapp/">
+  <link rel="canonical" href="http://localhost:1313/posts/introduction_to_webapp/">
   <link rel="shortcut icon" href="https://siccsegv.com/static/img/icon1.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +18,12 @@
   <link rel="stylesheet" href="/css/style.css">
   
   <link rel="stylesheet" href="/css/post-style.css">
+  <link rel="stylesheet" href="/css/chroma.css">
+  <script src="/js/post.js" defer></script>
   
   
 </head>
-<body>
+<body id="top">
   <header class="header">
   <div class="header-container">
     <div class="logo-section">
@@ -53,28 +55,26 @@
 
   
   <main>
-    
+    <div class="reading-progress" aria-hidden="true">
+  <span class="reading-progress__bar" data-reading-progress></span>
+</div>
 
 <article class="blog-post">
-  <div class="post-container">
-    
-    <header class="post-header">
+  <div class="post-container"><header class="post-header">
       <div class="post-breadcrumb">
         <a href="/">Blog</a>
         <span>/</span>
         
-          <span>Cybersecurity</span>
+        <a href="/categories/cybersecurity/">Cybersecurity</a>
         
       </div>
 
-      <h1 class="post-heading">
-        Introduction to Web Applications
-      </h1>
+      <h1 class="post-heading">Introduction to Web Applications</h1>
 
       <div class="post-details">
         <div class="post-author">
           <div class="author-avatar">
-            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa-solid fa-memory"></i>
           </div>
           <div class="author-info">
             <span class="author-name">Siccsegv Team</span>
@@ -92,66 +92,92 @@
             2 min read
           </span>
           
-            <span class="info-item">
-              <i class="fa-solid fa-tag"></i>
-              Cybersecurity
-            </span>
+          
+          <span class="info-item">
+            <i class="fa-solid fa-folder"></i>
+            Cybersecurity
+          </span>
           
         </div>
       </div>
 
       <div class="post-tags-header">
         
-          <span class="post-tag">#web-applications</span>
+        <a href="/tags/web-applications/" class="post-tag">#web-applications</a>
         
-          <span class="post-tag">#security</span>
+        <a href="/tags/security/" class="post-tag">#security</a>
         
-          <span class="post-tag">#software</span>
+        <a href="/tags/software/" class="post-tag">#software</a>
         
-          <span class="post-tag">#accessibility</span>
+        <a href="/tags/accessibility/" class="post-tag">#accessibility</a>
         
       </div>
     </header>
-
-    
-    <div class="post-body">
+<div class="post-body">
       <p>Web applications are software programs accessed through a web browser over the internet. They have become increasingly popular in recent years due to their convenience,  accessibility, and ease of updating and maintaining.</p>
 <p>One of the main advantages of web applications is their accessibility.  Because they are accessed through a web browser, we can use them on any device with an internet connection, including computers, smartphones, and tablets. This allows users to access the application from any location, making it easy to stay connected and productive on the go.</p>
 <p>Web applications are also convenient because they do not require users to install any software on their devices. This saves users time and storage space and makes it easier for organizations to roll out updates and new features.</p>
-<p>In the modern era, web applications are used in various industries and for a wide range of purposes. Some common examples include:
-Productivity tools: Web applications such as Google Docs, Trello, and Asana allow users to create and collaborate on documents, manage tasks and projects, and more.</p>
-<ul>
-<li>
-<p>Communication and messaging: Applications such as Slack, Skype, and Zoom allow users to communicate and collaborate in real-time, both for work and personal purposes.</p>
-</li>
-<li>
-<p>Social networking: Applications such as Facebook, Instagram, and Twitter allow users to connect with friends and family, share updates and photos, and discover new content.</p>
-</li>
-<li>
-<p>E-commerce: Applications like Amazon, eBay, and Etsy allow users to shop and purchase products online.
-Education and training: Applications such as Khan Academy, Coursera, and edX offer online
-courses and learning resources for students and professionals.</p>
-</li>
-</ul>
+<p>In the modern era, web applications are used in various industries and for a wide range of purposes. Some common examples include:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Category</th>
+					<th>Examples</th>
+					<th>What they do</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Productivity</td>
+					<td>Google Docs, Trello, Asana</td>
+					<td>Create and collaborate on documents, manage tasks and projects</td>
+			</tr>
+			<tr>
+					<td>Communication</td>
+					<td>Slack, Skype, Zoom</td>
+					<td>Real-time messaging and calls</td>
+			</tr>
+			<tr>
+					<td>Social networking</td>
+					<td>Facebook, Instagram, Twitter</td>
+					<td>Connect with people, share updates and photos, discover content</td>
+			</tr>
+			<tr>
+					<td>E-commerce</td>
+					<td>Amazon, eBay, Etsy</td>
+					<td>Shop and purchase products online</td>
+			</tr>
+			<tr>
+					<td>Education</td>
+					<td>Khan Academy, Coursera, edX</td>
+					<td>Online courses and learning resources</td>
+			</tr>
+	</tbody>
+</table>
+<div class="divider" role="separator" aria-hidden="true">
+  <span>───── // ─────</span>
+</div>
+
 <p>Web applications have become an integral part of our daily lives and have transformed the way we work, communicate, and access information. As technology advances, web applications will likely play a major role in the modern era.</p>
 
-    </div>
+      <div class="post-eof" aria-hidden="true">
+  <span>[ EOF ]</span>
+</div>
 
-    
-    <footer class="post-footer">
+    </div><footer class="post-footer">
       <div class="share-section">
         <h4>Share this article</h4>
         <div class="share-buttons">
-          <a href="https://twitter.com/intent/tweet?text=Introduction%20to%20Web%20Applications&url=https%3a%2f%2fblog.siccsegv.com%2fposts%2fintroduction_to_webapp%2f" class="share-btn twitter" target="_blank" rel="noopener noreferrer">
+          <a href="https://twitter.com/intent/tweet?text=Introduction%20to%20Web%20Applications&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fintroduction_to_webapp%2f" class="share-btn twitter" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-twitter"></i> Twitter
           </a>
-          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fblog.siccsegv.com%2fposts%2fintroduction_to_webapp%2f" class="share-btn linkedin" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fintroduction_to_webapp%2f" class="share-btn linkedin" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-linkedin"></i> LinkedIn
           </a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.siccsegv.com%2fposts%2fintroduction_to_webapp%2f" class="share-btn facebook" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fintroduction_to_webapp%2f" class="share-btn facebook" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-facebook"></i> Facebook
           </a>
-          <a href="#" class="share-btn copy" onclick="navigator.clipboard.writeText('https:\/\/blog.siccsegv.com\/posts\/introduction_to_webapp\/'); alert('Link copied!'); return false;">
+          <a href="#" class="share-btn copy" onclick="navigator.clipboard.writeText('http:\/\/localhost:1313\/posts\/introduction_to_webapp\/'); alert('Link copied!'); return false;">
             <i class="fa-solid fa-link"></i> Copy Link
           </a>
         </div>
@@ -159,7 +185,7 @@ courses and learning resources for students and professionals.</p>
 
       <div class="author-box">
         <div class="author-avatar-large">
-          <i class="fa-solid fa-user-secret"></i>
+          <i class="fa-solid fa-memory"></i>
         </div>
         <div class="author-details">
           <h4>Written by Siccsegv Team</h4>
@@ -170,11 +196,11 @@ courses and learning resources for students and professionals.</p>
         </div>
       </div>
     </footer>
+
   </div>
 </article>
 
-
-
+<a href="#top" class="back-to-top" data-back-to-top aria-label="Back to top">↑</a>
 
 <section class="related-posts">
   <div class="container-narrow">
@@ -183,12 +209,12 @@ courses and learning resources for students and professionals.</p>
       
         <article class="post-card">
   <div class="post-status">
-    <span class="status-badge new">● NEW</span>
+    <span class="status-badge archive">● POST</span>
     <span class="post-date-small">Mar 8, 2025</span>
   </div>
   
   <h3 class="post-card-title">
-    <a href="https://blog.siccsegv.com/posts/cybersecurity_in_the_modern_world/">
+    <a href="http://localhost:1313/posts/cybersecurity_in_the_modern_world/">
       Cybersecurity in the Modern World
     </a>
   </h3>
@@ -206,7 +232,7 @@ courses and learning resources for students and professionals.</p>
       
     </div>
     <span class="read-time">
-      <i class="fa-solid fa-clock"></i> 2 min
+      <i class="fa-solid fa-clock"></i> 3 min
     </span>
   </div>
 </article>
@@ -214,12 +240,12 @@ courses and learning resources for students and professionals.</p>
       
         <article class="post-card">
   <div class="post-status">
-    <span class="status-badge new">● NEW</span>
+    <span class="status-badge archive">● POST</span>
     <span class="post-date-small">Feb 15, 2025</span>
   </div>
   
   <h3 class="post-card-title">
-    <a href="https://blog.siccsegv.com/posts/what_is_cryptography/">
+    <a href="http://localhost:1313/posts/what_is_cryptography/">
       What is Cryptography?
     </a>
   </h3>
@@ -237,7 +263,7 @@ courses and learning resources for students and professionals.</p>
       
     </div>
     <span class="read-time">
-      <i class="fa-solid fa-clock"></i> 2 min
+      <i class="fa-solid fa-clock"></i> 3 min
     </span>
   </div>
 </article>
@@ -245,12 +271,12 @@ courses and learning resources for students and professionals.</p>
       
         <article class="post-card">
   <div class="post-status">
-    <span class="status-badge new">● NEW</span>
+    <span class="status-badge archive">● POST</span>
     <span class="post-date-small">Mar 10, 2025</span>
   </div>
   
   <h3 class="post-card-title">
-    <a href="https://blog.siccsegv.com/posts/career_in_cybersecurity/">
+    <a href="http://localhost:1313/posts/career_in_cybersecurity/">
       Is a career in cybersecurity open to everyone?
     </a>
   </h3>

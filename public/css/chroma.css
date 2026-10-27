@@ -1,0 +1,147 @@
+/* ============================================================
+   Chroma syntax highlighting — Siccsegv terminal palette
+   ------------------------------------------------------------
+   Hugo emits these classes because `noClasses = false` is set in
+   hugo.toml. Keep this file in sync with the palette in style.css.
+
+   Reference: https://gohugo.io/content-management/syntax-highlighting/
+   ============================================================ */
+
+/* Base text ------------------------------------------------- */
+.chroma {
+  color: #e6e6e0;
+  background: transparent;
+}
+
+/* Comments -------------------------------------------------- */
+.chroma .c,
+.chroma .ch,
+.chroma .cm,
+.chroma .c1,
+.chroma .cs,
+.chroma .cp,
+.chroma .cpf {
+  color: #6f7166;
+  font-style: italic;
+}
+
+/* Keywords -------------------------------------------------- */
+.chroma .k,
+.chroma .kc,
+.chroma .kd,
+.chroma .kn,
+.chroma .kp,
+.chroma .kr,
+.chroma .kt {
+  color: #89b4fa;
+}
+
+/* Strings --------------------------------------------------- */
+.chroma .s,
+.chroma .sa,
+.chroma .sb,
+.chroma .sc,
+.chroma .dl,
+.chroma .sd,
+.chroma .s2,
+.chroma .se,
+.chroma .sh,
+.chroma .si,
+.chroma .sx,
+.chroma .sr,
+.chroma .s1,
+.chroma .ss {
+  color: #a6e3a1;
+}
+
+/* Numbers and literals -------------------------------------- */
+.chroma .m,
+.chroma .mb,
+.chroma .mf,
+.chroma .mh,
+.chroma .mi,
+.chroma .il,
+.chroma .mo {
+  color: #f79f99;
+}
+
+/* Functions ------------------------------------------------- */
+.chroma .nf,
+.chroma .fm {
+  color: #d4ff00;
+}
+
+/* Built-ins and namespaces ---------------------------------- */
+.chroma .nb,
+.chroma .bp,
+.chroma .nn {
+  color: #89b4fa;
+}
+
+/* Variables and attributes ---------------------------------- */
+.chroma .nv,
+.chroma .vc,
+.chroma .vg,
+.chroma .vi,
+.chroma .vm,
+.chroma .na,
+.chroma .nt {
+  color: #14c38e;
+}
+
+/* Operators and punctuation -------------------------------- */
+.chroma .o,
+.chroma .ow,
+.chroma .p {
+  color: #cacaca;
+}
+
+/* Errors ---------------------------------------------------- */
+.chroma .err {
+  color: #ff5f56;
+  background: rgba(255, 95, 86, 0.08);
+}
+
+/* Line numbers ---------------------------------------------- */
+.chroma .lntable {
+  border-spacing: 0;
+  width: 100%;
+}
+
+.chroma .lntd {
+  vertical-align: top;
+  padding: 0;
+  border: none;
+}
+
+.chroma .lntd:first-child {
+  width: 1%;
+  user-select: none;
+}
+
+.chroma .lntd:first-child pre {
+  padding: 1.25rem 0.75rem 1.25rem 1.5rem;
+  text-align: right;
+}
+
+@media (min-width: 769px) {
+  .chroma .lntd:last-child pre {
+    padding-left: 0;
+  }
+}
+
+.chroma .lnt,
+.chroma .ln {
+  color: #5b5c53;
+}
+
+/* Lines ----------------------------------------------------- */
+.chroma .line {
+  display: block;
+}
+
+/* Lines marked with hl_lines=[...] -------------------------- */
+.chroma .line.hl {
+  background: rgba(20, 195, 142, 0.12);
+  box-shadow: inset 2px 0 0 var(--accent);
+}
