@@ -135,9 +135,11 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--fg);
 }
 
-.logo i {
-  color: var(--accent);
-  font-size: 1.5rem;
+.logo-mark {
+  display: block;
+  width: auto;
+  height: 34px;
+  flex-shrink: 0;
 }
 
 .blog-tagline {
@@ -810,6 +812,10 @@ section {
 
   .blog-tagline {
     display: none;
+  }
+
+  .logo-mark {
+    height: 30px;
   }
 
   .posts-grid {
