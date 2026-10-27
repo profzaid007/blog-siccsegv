@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>404 Page not found - Siccsegv Blog</title>
   <meta name="description" content="Insights into technology, cybersecurity, philosophy and all that lies in between">
   
-  <link rel="canonical" href="http://localhost:1313/404.html">
+  <link rel="canonical" href="https://blog.siccsegv.com/404.html">
   <link rel="shortcut icon" href="https://siccsegv.com/static/img/icon1.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,20 +52,24 @@
     
 <section class="error-section">
   <div class="container">
-    <div class="error-container">
-      <pre class="error-ascii">
+    <div class="error-layout">
+
+      <div class="error-art">
+        <p class="error-label">// error</p>
+        <pre class="error-ascii" aria-hidden="true">
  _  _    ___  _  _   
 | || |  / _ \| || |  
 | || |_| | | | || |_ 
 |__   _| |_| |__   _|
    |_|  \___/   |_|  
-                     
-ERROR: Page Not Found
-      </pre>
-      
+        </pre>
+        <p class="error-code">SIGSEGV (11) · core dumped</p>
+      </div>
+
       <div class="error-content">
         <h1 class="error-title">404: Segmentation Fault<span class="cursor">_</span></h1>
-        <br/>
+        <p class="error-subtitle">The page you asked for is not mapped into memory.</p>
+
         <div class="terminal-box">
           <div class="terminal-header">
             <div class="terminal-buttons">
@@ -77,36 +81,85 @@ ERROR: Page Not Found
           </div>
           <div class="terminal-body">
             <p class="terminal-line">
-              <span class="prompt">$</span> 
+              <span class="prompt">$</span>
               <span class="command">ls -la /404.html</span>
             </p>
             <p class="terminal-output error-output">
               ls: cannot access '/404.html': No such file or directory
             </p>
             <p class="terminal-line">
-              <span class="prompt">$</span> 
+              <span class="prompt">$</span>
+              <span class="command">./siccsegv --read /404.html</span>
+            </p>
+            <p class="terminal-output error-output">
+              Segmentation fault (core dumped)
+            </p>
+            <p class="terminal-line">
+              <span class="prompt">$</span>
               <span class="command">cd /blog<span class="cursor">_</span></span>
             </p>
           </div>
         </div>
+
+        <div class="error-actions">
+          <a href="/" class="error-button">← cd /blog</a>
+          <a href="/archive" class="error-button error-button--ghost">Browse the archive</a>
+        </div>
+
+        
+        
+        <div class="error-recent">
+          <p class="error-recent__label">// recent posts</p>
+          <ul>
+            
+            <li>
+              <a href="https://blog.siccsegv.com/posts/ai_hype/">
+                <span>Mar 18</span>
+                The AI Hype
+              </a>
+            </li>
+            
+            <li>
+              <a href="https://blog.siccsegv.com/posts/a_case_for_ctfs/">
+                <span>Mar 13</span>
+                A Case for CTFs
+              </a>
+            </li>
+            
+            <li>
+              <a href="https://blog.siccsegv.com/posts/career_in_cybersecurity/">
+                <span>Mar 10</span>
+                Is a career in cybersecurity open to everyone?
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+        
       </div>
+
     </div>
   </div>
 </section>
 
   </main>
   
-  <footer class="footer">
+  <footer class="footer" id="site-footer">
   <div class="container">
-    <pre class="footer-ascii">
+    <div class="footer-brand">
+      <p class="footer-brand__label">// Siccsegv</p>
+
+      <pre class="footer-ascii" aria-hidden="true">
  ____ ___ ____ ____ ____  _____ ______     __
 / ___|_ _/ ___/ ___/ ___|| ____/ ___\ \   / /
 \___ \| | |  | |   \___ \|  _|| |  _ \ \ / /
  ___) | | |__| |___ ___) | |__| |_| | \ V /
 |____/___\____\____|____/|_____\____|  \_/
+      </pre>
 
-      Technical Insights & Security Research
-    </pre>
+      <p class="footer-brand__tagline">Technical Insights &amp; Security Research</p>
+    </div>
+
     <div class="footer-content">
       <div class="footer-col">
         <h4>Siccsegv Blog</h4>
@@ -143,8 +196,10 @@ ERROR: Page Not Found
         </div>
       </div>
     </div>
+
     <div class="footer-bottom">
-      <p>&copy; 2026 Siccsegv. All rights retained.</p>
+      <p>&copy; 2026 Siccsegv. All rights reserved.</p>
+      <p class="footer-bottom__meta">Built with Hugo · <a href="/index.xml">RSS</a></p>
     </div>
   </div>
 </footer>
