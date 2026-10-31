@@ -449,6 +449,7 @@
 .code-block {
   margin: 2rem 0;
   overflow: hidden;
+  color: var(--fg);
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -1031,7 +1032,7 @@
 }
 
 .author-cta:hover {
-  gap: 0.75rem;
+  color: var(--accent2);
 }
 
 /* ============================================================
@@ -1060,6 +1061,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
+}
+
+.share-btn:active,
+.back-to-top:active,
+.code-block__copy:active,
+.post-tag:active {
+  transform: translateY(1px);
 }
 
 /* ============================================================
